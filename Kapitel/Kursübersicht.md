@@ -1,4 +1,4 @@
-### [Kursinhalt](README.md)
+### [Kursinhalt](../README.md)
 
 Kursübersicht
 ===============
@@ -32,4 +32,4 @@ Ressourcen
 - https://stackoverflow.com/
 - https://csharp.net-tutorials.com/ (auch deutschsprachig)
 
-### [Kursinhalt](README.md)
+### [Kursinhalt](../README.md)
