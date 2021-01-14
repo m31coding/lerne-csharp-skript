@@ -1,2 +1,6 @@
-# lerne-csharp-skript
-Skript zum Programmierkurs Lerne Programmieren mit C# und künstlicher Intelligenz.
+# Lerne Programmieren mit C# und künstlicher Intelligenz
+
+Das Skript zum Programmierkurs.
+
+- ### [Kursübersicht](Kursübersicht.md)
+
