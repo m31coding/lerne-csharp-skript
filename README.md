@@ -4,5 +4,5 @@ Das Skript zum Programmierkurs.
 
 ## Kursinhalt
 
-- ### [Kursübersicht](Kapitel/Kursinhalt.md)
+- ### [Kursübersicht](Kapitel/Kursübersicht.md)
 
