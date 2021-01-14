@@ -3,6 +3,8 @@
 Kursübersicht
 ===============
 
+Die folgenden Dinge möchte ich euch gerne in diesem Kurs beibringen:
+
 Künstliche Intelligenz
 -----------------------
 
@@ -29,7 +31,8 @@ Ressourcen
 - https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/
 - https://www.w3schools.com/cs/
 - https://www.tutorialsteacher.com/csharp/csharp-tutorials/
-- https://stackoverflow.com/
 - https://csharp.net-tutorials.com/ (auch deutschsprachig)
+- https://stackoverflow.com/
+
 
 ### [Kursinhalt](../README.md)

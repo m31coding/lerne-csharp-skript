@@ -5,4 +5,5 @@ Das Skript zum Programmierkurs.
 ## Kursinhalt
 
 - ### [Kursübersicht](Kapitel/Kursübersicht.md)
+- ### [C# und Hallo Welt](Kapitel/CSharpUndHalloWelt.md)
 
