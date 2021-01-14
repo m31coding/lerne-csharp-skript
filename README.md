@@ -12,3 +12,8 @@ Das Skript zum Programmierkurs.
 - ### [Schleifen](Kapitel/Schleifen.md)
 - ### [Benutzereingaben](Kapitel/Benutzereingaben.md)
 
+## Übungen
+
+- ### [Übung 1](Übungen/Übung1.md)
+
+

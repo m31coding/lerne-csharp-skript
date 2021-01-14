@@ -3,6 +3,9 @@
 Benutzereingaben
 =================
 
+Eingabe von Text
+----------------
+
 Über die Konsole kann einem Programm **Text übergeben** werden. Der folgende Code wartet darauf, dass der Benutzer Text in die Konsole eingibt und anschließend die Eingabetaste drückt:
 
 ```cs
@@ -22,19 +25,40 @@ Um Ausnahmen zu verhindern können wir stattdessen die `TryParse`-Methoden verwe
 ```cs
 if(int.TryParse(eingabe, out int zahl))
 {
-    Console.WriteLine($"Die Zahl {zahl} wurde erfolgreich eingegeben.");
+    // Texteingabe wurde erfolgreich zu einer Zahl konvertiert.
 }
 else
 {
-    Console.WriteLine($"Die Eingabe {eingabe} ist keine Zahl!");
+    // Konvertierung nicht möglich.
 }
 ```
 
-Die `TryParse`-Methode hat einen `bool`-Rückgabewert und einnen sogenannten `out`-Parameter. In diesen wird im Falles des Erfolges die konvertierte Zahl gespeichert.
+Die `TryParse`-Methode hat einen `bool` Rückgabewert und einen sogenannten `out` Parameter. In dessen Variable wird im Falles des Erfolges die konvertierte Zahl gespeichert und kann zur weitern Verarbeitung verwendet werden.
 
-Console.ReadKey()
------------------------
+Abfragen einzelner Tasten
+--------------------------
 
+Um einzelne Tasten abzufragen wird die Methode `Console.ReadKey()` verwendet:
 
+```cs
+ConsoleKeyInfo info = Console.ReadKey();
+
+if (info.Key == ConsoleKey.UpArrow)
+{
+    // Pfeiltaste nach oben wurde gedrückt.
+}
+else if (info.Key == ConsoleKey.DownArrow)
+{
+    // Pfeiltaste nach unten wurde gedrückt.
+}
+else
+{
+    // Eine andere Taste wurde gedrückt.
+}
+```
+
+Diese Methode gibt ein Objekt der Klasse `ConsoleKeyInfo` zurück, auf dem wir die Eigenschaft `Key` aufrufen können. Diese ermöglicht es uns auf einfache Weise zu überprüfen um welche Taste es sich bei der Gedrückten handelt. 
+
+Es existiert außerdem die Überladung `ReadKey(bool intercept)` mit der wir zusätzlich steuern können, ob die gedrückte Taste auf der Konsole ausgegeben werden soll. 
 
 ### [Kursinhalt](../README.md)
