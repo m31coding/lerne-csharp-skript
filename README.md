@@ -9,4 +9,6 @@ Das Skript zum Programmierkurs.
 - ### [Variablen](Kapitel/Variablen.md)
 - ### [Datentypen](Kapitel/Datentypen.md)
 - ### [Verzweigungen](Kapitel/Verzweigungen.md)
+- ### [Schleifen](Kapitel/Schleifen.md)
+- ### [Benutzereingaben](Kapitel/Benutzereingaben.md)
 
