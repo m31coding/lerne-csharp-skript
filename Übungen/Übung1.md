@@ -45,7 +45,7 @@ static void FragePasswortAb()
         Console.WriteLine("Wie lautet das Passwort?");
 
         string eingabe = Console.ReadLine();
-        if(eingabe == "correct horse batt    staple")
+        if(eingabe == "correct horse battery staple")
         {
             Console.WriteLine("Passwort korrekt!");
             break;
