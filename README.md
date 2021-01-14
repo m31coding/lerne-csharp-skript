@@ -2,5 +2,7 @@
 
 Das Skript zum Programmierkurs.
 
-- ### [Kursübersicht](Kapitel/Kursübersicht.md)
+## Kursinhalt
+
+- ### [Kursübersicht](Kapitel/Kursinhalt.md)
 
