@@ -9,7 +9,7 @@ Lege direkt über der Begrüßungszeile
 Console.WriteLine("Herzlich willkommen zum Programmierkurs!");
 ```
 
-eine Variable an, in der du deinen Namen speichert. Gib den Namen in einer zweiten Zeile auf der Konsole aus.
+eine Variable an, in der du deinen Namen speichert.
 
 
 <details>
@@ -19,7 +19,7 @@ eine Variable an, in der du deinen Namen speichert. Gib den Namen in einer zweit
 </details>
 
 <details>
-  <summary><b>Teillösung</b></summary>
+  <summary><b>Lösung</b></summary>
 
 ```cs
 string name = "Kevin";
@@ -27,6 +27,8 @@ Console.WriteLine("Herzlich willkommen zum Programmierkurs!");
 ```
 </details>
 
+
+ Gib den Namen in einer zweiten Zeile auf der Konsole aus.
 
 <details>
   <summary><b>Hinweis</b></summary>
@@ -44,7 +46,7 @@ Console.WriteLine(name);
 ```
 </details>
 
-Hast du die richtige Lösung programmiert? Hervorragend! Wir wollen diese persönliche Begrüßung nun in einer Zeile ausgeben. Hierzu können wir den `+` Operator verwenden, um aus zwei Zeichenketten eine zu machen, zum Beispiel
+Hast du die richtige Lösung programmiert? Hervorragend! Wir wollen diese persönliche Begrüßung nun in einer einzelnen Zeile ausgeben. Hierzu können wir den `+` Operator verwenden, um aus zwei Zeichenketten eine zu machen, zum Beispiel
 ergibt `"Hallo" + " Welt"` den string `Hallo Welt`.
 
 
