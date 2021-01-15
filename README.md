@@ -14,6 +14,7 @@ Das Skript zum Programmierkurs.
 
 ## Übungen
 
-- ### [Übung 1](Übungen/Übung1.md)
+- ### [Übungen: Variablen](Übungen/Variablen.md)
+- ### [Übungen: Benutzereingaben](Übungen/Benutzereingaben.md)
 
 

@@ -23,9 +23,9 @@ Das schwarze Fenster das sich öffnet nennt sich **Konsole**. Auf der Konsole ka
 
 Der Befehl `Console.WriteLine` lässt euch Text auf die Konsole schreiben. Text muss in C# in Anführungszeichen gesetzt werden. Beachte außerdem dass jeder Befehl mit einem Semikolon `;` abgeschlossen werden muss.
 
-Ändert nun den Text zu einer **individuellen Begrüßung**, z.Bsp: "Herzlich willkommen zum Programmierkurs!" Startet das Programm neu.
+Ändert nun den Text zu einer **spezifischeren Begrüßung**, zum Beispiel: "Herzlich willkommen zum Programmierkurs!" Startet das Programm neu.
 
- Wir wollen in allen Projekten die neuste **.NET 5.0** Version und stellen das Projekt nun auf diese um. Mache hierzu einen Rechtsklick auf das Projekt *Hello World* im Projektmappenexplorer und wähle *Eigenschaften* aus. Als Zeilframework .NET 5.0.
+ Wir wollen in allen Projekten die neuste **.NET 5.0** Version und stellen das Projekt nun auf diese um. Mache hierzu einen Rechtsklick auf das Projekt *Hello World* im Projektmappenexplorer und wähle *Eigenschaften* aus. Setze das Zeilframework auf .NET 5.0.
 
  Außerdem wollen wir auch das neue Feature '**Nullwerte bei Referenztypen**' freischalten. Dazu machen wir einen Doppelklick auf das Projekt 'HelloWorld' und fügen die Zeile `<Nullable>enable</Nullable>` ein, sodass die Datei den folgenden Inhalt hat:
 
