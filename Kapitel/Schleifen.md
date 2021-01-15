@@ -7,7 +7,8 @@ while Schleife
 --------------- 
 
 ```cs
-while(bedinung)
+
+while(bedingung) // bedinung ist ein bool Wert
 {
     // führe diesen code aus
 }
@@ -27,7 +28,7 @@ Resultat: Gibt die Zahlen 0 bis 9 auf der Konsole aus.
 Schleifenbefehle
 ----------------
 
-Innerhalb einer Schleife kann man mit dem Befehl `break` die Schleife beenden, und mit dem Befehl `continue` aus der Schleife herausspringen.
+Innerhalb einer Schleife kann man mit dem Befehl `break` die Schleife beenden, und mit dem Befehl `continue` die aktuelle Iteration beenden und in die nächste springen.
 
 
 Übung
