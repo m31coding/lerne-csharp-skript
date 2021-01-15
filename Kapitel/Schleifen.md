@@ -8,7 +8,7 @@ while Schleife
 
 ```cs
 
-while(bedingung) // bedinung ist ein bool Wert
+while(bedingung) // bedingung ist ein bool Wert
 {
     // führe diesen code aus
 }
