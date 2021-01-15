@@ -36,8 +36,8 @@ Desweiteren gibt es eine Reihe von nützlichen Vergleichsoperatoren: `==`, `!=`,
 Vergleiche der beiden obigen Zahlen liefern die folgenden Ergebnisse: 
 
 ```cs
-bool zahlenSindGleich = zahl1 == zahl2; // true
-zahl1 != zahl2 // false
+bool zahlenSindGleich = zahl1 == zahl2; // false
+zahl1 != zahl2 // true
 zahl1 < zahl2 // true
 zahl1 > zahl2 // false
 zahl1 <= zahl2 // true
