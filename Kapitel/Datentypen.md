@@ -45,4 +45,6 @@ Weitere Typen
 
 Weitere zusammengesetzten Datentypen sind beispielsweise Listen, Mengen, und vom Programmierer definierte Typen. Diese werden in einem späteren Kapitel behandelt.
 
+---
+
 ### [Kursinhalt](../README.md)

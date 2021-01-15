@@ -61,4 +61,6 @@ Diese Methode gibt ein Objekt der Klasse `ConsoleKeyInfo` zurück, auf dem wir d
 
 Es existiert außerdem die Überladung `ReadKey(bool intercept)` mit der wir zusätzlich steuern können, ob die gedrückte Taste auf der Konsole ausgegeben werden soll. 
 
+---
+
 ### [Kursinhalt](../README.md)

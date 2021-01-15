@@ -103,4 +103,6 @@ string ausgabe = spieler1HatGewonnen ? "Spieler 1 hat gewonnen!" : "Spieler 2 ha
 Console.WriteLine(ausgabe);
 ```
 
+---
+
 ### [Kursinhalt](../README.md)

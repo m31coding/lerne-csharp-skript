@@ -103,4 +103,6 @@ Geht mit Kommentaren sparsam um und achtet darauf dass sie sinnvoll sind. Der me
 
 Erfahrene Programmierer können Code schreiben der auch ganz ohne Kommentare sehr sprechend ist und sich gut lesen lässt.
 
+---
+
 ### [Kursinhalt](../README.md)
