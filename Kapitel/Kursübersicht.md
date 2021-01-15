@@ -3,7 +3,9 @@
 Kursübersicht
 ===============
 
-Die folgenden Dinge möchte ich euch gerne in diesem Kurs beibringen:
+Meine Motivation für diesen Kurs ist dich vom Programmieren zu begeistern. Hierzu möchte ich dich in die moderne Programmiersprache C# einführen und dir außerdem die Grundlagen einer klassischen KI vermitteln.
+
+Wir werden grob die folgenden Themen behandeln:
 
 Künstliche Intelligenz
 -----------------------
@@ -17,13 +19,14 @@ Künstliche Intelligenz
 Programmiersprache C#
 -----------------------
 
-- Grundlegende Datentypen
 - Variablen
+- Datentypen
+- Operatoren
 - Kontrollstrukturen
 - LINQ
-- class, struct, enum
+- Klassen, Strukturen, Enumerationstypen
 
-Nach diesem Kurs werdet ihr in der Lage sein C# Konsolenprogramme selbständig zu verfassen. Außerdem könnt ihr das gelernte Wissen der Vier gewinnt KI auf viele andere Spiele übertragen, zum Beispiel Schach, und selbständig KIs für diese Spiele implementieren.
+Am Ende dieses Kurses werdet ihr in Lage sein C# Konsolenprogramme selbständig zu verfassen. Außerdem könnt ihr das gelernte Wissen der Vier gewinnt KI auf viele andere Spiele übertragen, zum Beispiel Schach, und selbständig KIs für diese Spiele implementieren.
 
 Ressourcen
 -----------
