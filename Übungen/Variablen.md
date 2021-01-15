@@ -28,7 +28,12 @@ Console.WriteLine("Herzlich willkommen zum Programmierkurs!");
 </details>
 
 
- Gib den Namen in einer zweiten Zeile auf der Konsole aus.
+ Gib den Namen in einer zweiten Zeile auf der Konsole aus. Dein Programm sollte also in etwa folgendes ausgeben:
+
+ ```sh
+"Herzlich willkommen zum Programmierkurs!"
+"Kevin"
+ ```
 
 <details>
   <summary><b>Hinweis</b></summary>
@@ -46,7 +51,6 @@ Console.WriteLine(name);
 ```
 </details>
 
-Starte das Programm und schaue dir die Konsolenausgabe an.
 Hast du die richtige Lösung programmiert? Hervorragend! Wir wollen diese persönliche Begrüßung nun in einer einzelnen Zeile ausgeben. Hierzu können wir den `+` Operator verwenden, um aus zwei Zeichenketten eine zu machen, zum Beispiel
 ergibt `"Hallo" + " Welt"` den string `Hallo Welt`.
 
