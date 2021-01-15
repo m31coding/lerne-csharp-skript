@@ -14,6 +14,12 @@ int zahl1 = 2 + 2 * 2; // 6
 int zahl2 = (2 + 2) * 2; // 8
 ```
 
+Mit dem Modulooperator `%` kann der Rest einer Division bestimmt werden:
+
+```cs
+int divisionsRest = 11 % 3; // 2
+```
+
 Vergleichsoperatoren
 --------------------
 

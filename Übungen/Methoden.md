@@ -1,0 +1,90 @@
+### [Kursinhalt](../README.md)
+
+Übungen zu Methoden
+===================
+
+Schreibe in die Klasse `program` und unter die `main` Methode eine Methode `static void Begrüßung(string name)`. Rufe diese in der `main` Methode mit verschiedenen Namen auf. 
+
+Achte darauf dass du das `static` Schlüsselwort zu Beginn der Definition nicht vergisst. Was es damit auf sich hat werden wir zu einem späteren Zeitpunkt lernen. Der Knackpunkt ist dass man aus der statischen `main` Methode heraus nur andere statische Methoden direkt aufrufen kann.
+
+Ihr könnt den anderen Code den ihr bereits geschrieben habt einfach auskommentieren, beziehungsweise die Teile die ihr für die Methode braucht ausschneiden und in die Methode einfügen.
+
+
+<details>
+  <summary><b>Lösung</b></summary>
+
+```cs
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+             * Euer anderer Code 
+             * ...
+             */
+
+            Begrüßung("Kevin");
+            Begrüßung("Alice");
+            Begrüßung("Bob");
+        }
+
+        static void Begrüßung(string name)
+        {
+            Console.WriteLine($"Herzlich willkommen zum Programmierkurs {name}!");
+        }
+    }
+}
+
+```
+</details>
+
+Schreibt außerdem eine Methode `static void GebeAlleGrundrechenartenAus(double zahl1, double zahl2)` die für die vier Grundrechenarten jeweils eine Zeile in der Konsole ausgibt, wie ihr es bereits programmiert habt. Rufe auch diese neue Methode in der `main` Methode auf.
+
+<details>
+  <summary><b>Lösung</b></summary>
+
+```cs
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Begrüßung("Kevin");
+            Begrüßung("Alice");
+            Begrüßung("Bob");
+            GebeAlleGrundrechenartenAus(1.5, 2.5);
+        }
+
+        static void Begrüßung(string name)
+        {
+            Console.WriteLine($"Herzlich willkommen zum Programmierkurs {name}!");
+        }
+
+        static void GebeAlleGrundrechenartenAus(double zahl1, double zahl2)
+        {
+            double summe = zahl1 + zahl2;
+            double differenz = zahl1 - zahl2;
+            double produkt = zahl1 * zahl2;
+            double quotient = zahl1 / zahl2;
+
+            Console.WriteLine($"Die Summe aus {zahl1} und {zahl2} ist {summe}.");
+            Console.WriteLine($"Die Differenz aus {zahl1} und {zahl2} ist {differenz}.");
+            Console.WriteLine($"Das Produkt aus {zahl1} und {zahl2} ist {produkt}.");
+            Console.WriteLine($"Der Quotient aus {zahl1} und {zahl2} ist {quotient}.");
+        }
+    }
+}
+
+```
+</details>
+
+---
+
+### [Kursinhalt](../README.md)
