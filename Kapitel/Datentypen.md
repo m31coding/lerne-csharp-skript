@@ -23,7 +23,19 @@ Zusätzlich gibt es noch Zeichen (characters) und Wahrheitswerte (boolean values
 - `char`, zum Beispiel 'a', 'x', '2', '!'
 - `bool`: true / false
 
-TODO: 234.0f, 234234L
+Gleitkommazahlen werden in C# mit einem Punkt getrennt! Zum Beispiel stellt `3.1415` ein `double` dar, bei `3,1415` handelt es sich jedoch um einen Syntaxfehler.
+
+Um `float` Werte von `double` Werten zu unterscheiden, erhalten diese ein `f` als Suffix: `3.1415f`. Analog erhalten `long` Werte ein `L` als Suffix um sie von `int` Werten unterscheiden zu können. Die folgenden Beispiele zeigen wie wir Variablen der unterschiedlichen Typen anlegen können:
+
+```cs
+char ausrufezeichen = '!';
+bool spieler1HatGewonnen = true;
+int punkteSpieler1 = 100;
+long anzahlMenschenAufErde = 7800000000L;
+float schulnote = 1.25f;
+double pi = 3.14159265359;
+```
+
 
 ### Wie entscheide ich welchen Zahlentyp ich verwenden soll?
 
@@ -35,10 +47,30 @@ Strings
 Ein `string` stellt eine Zeichenkette dar und muss in doppelte Anführungszeichen gesetzt werden: 
 
 ```cs
-string begrüßung = "Herzlich Willkommen zum Programmierkurs";
+string begrüßung = "Herzlich Willkommen zum Programmierkurs!";
 ```
 
-Auf einem string lassen sich zahlreiche nützliche Eigenschaften und Methoden aufrufen, zum Beispiel `Length`, `Contains`, und `ToLower`. Eine Übersicht über alle Funktionalitäten finden sich in der [Dokumentation](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0).
+Auf einem string lassen sich zahlreiche nützliche Eigenschaften und Methoden aufrufen, zum Beispiel `Length`, `Contains`, und `ToLower`. Äußerst nützlich ist außerdem die Stringinterpolation `$`, welche es uns erlaubt Variablen wie folgt in einen string einzusetzen:
+
+```cs
+string name = "Kevin";
+Console.WriteLine($"Herzlich willkommen zum Programmierkurs {name}!");
+```
+
+Strings können außerdem mit dem Gleichheitsoperator `==` und dem Ungleichheitsoperator `!=` verglichen werden: 
+
+```cs
+string name1 = "Alice";
+string name2 = "Bob";
+bool namenSindGleich = name1 == name2; // false
+bool namenSindUngleich = name1 != name2; // true
+```
+
+Eine Übersicht über alle Funktionalitäten findest du in der [Dokumentation](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0).
+
+Um zur Dokumentation für einen bestimmten Typ zu bekommen suche ich meistens bei der Suchmaschine meiner Wahl nach dem Schlüsselwort in Verbindung mit 'msdn' (Microsoft Developer Network). Also zum Beispiel suche ich nach "string msdn". Die gewünschte Dokumentation ist dann meist der erste Treffer.
+
+> Tipp: Um von der englischsprachigen zur deutschsprachigen Dokumentation zu wechseln, könnt ihr in der URL `en-us` durch `de-de` ersetzten. 
 
 Weitere Typen
 --------------
