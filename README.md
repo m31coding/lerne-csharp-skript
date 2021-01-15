@@ -8,10 +8,10 @@ Das Skript zum Programmierkurs.
 - [C# und Hallo Welt](Kapitel/CSharpUndHalloWelt.md)
 - [Variablen](Kapitel/Variablen.md)
 - [Datentypen](Kapitel/Datentypen.md)
-- [Zahlenoperatoren](Kapitel/Zahlenoperatoren)
+- [Zahlenoperatoren](Kapitel/Zahlenoperatoren.md)
 - [Methoden](Kapitel/Methoden.md)
 - [Verzweigungen](Kapitel/Verzweigungen.md)
-- [Operatoren der Wahrheitswerte](Kapitel/OperatorenDerWahrheitswerte)
+- [Operatoren der Wahrheitswerte](Kapitel/OperatorenDerWahrheitswerte.md)
 - [Schleifen](Kapitel/Schleifen.md)
 - [Benutzereingaben](Kapitel/Benutzereingaben.md)
 
