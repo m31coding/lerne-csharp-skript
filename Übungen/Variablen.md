@@ -3,13 +3,13 @@
 Übungen zu Variablen
 ====================
 
-Legt direkt über der Begrüßungszeile
+Lege direkt über der Begrüßungszeile
 
 ```cs
 Console.WriteLine("Herzlich willkommen zum Programmierkurs!");
 ```
 
-eine Variable an, in die ihr euren Namen speichert. Gebt den Namen in einer zweiten Zeile auf der Konsole aus.
+eine Variable an, in der du deinen Namen speichert. Gib den Namen in einer zweiten Zeile auf der Konsole aus.
 
 
 <details>
