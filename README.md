@@ -21,6 +21,9 @@ Das Skript zum Programmierkurs.
     - [Übungen: Benutzereingaben](Übungen/Benutzereingaben.md)
 
 
+## Ressourcen
 
+- [Glossar](https://docs.google.com/spreadsheets/d/1w_FkXoN7iZ44eHloq2H4qOmTBGMPEinPypG_ez_MZ24/edit?usp=sharing)
 
+- [Visual Studio Tastenkombinationen](https://docs.google.com/spreadsheets/d/1C9p5r9nrLpd9N_28RipjmsC5OU0Jn42Eyw7QIL4YNaw/edit?usp=sharing)
 

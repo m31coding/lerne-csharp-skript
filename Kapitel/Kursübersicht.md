@@ -28,8 +28,8 @@ Programmiersprache C#
 
 Am Ende dieses Kurses werdet ihr in Lage sein C# Konsolenprogramme selbständig zu verfassen. Außerdem könnt ihr das gelernte Wissen der Vier gewinnt KI auf viele andere Spiele übertragen, zum Beispiel Schach, und selbständig KIs für diese Spiele implementieren.
 
-Ressourcen
------------
+Online Tutorials und Hilfen
+----------------------------
 
 - https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/
 - https://www.w3schools.com/cs/
