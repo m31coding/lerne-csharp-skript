@@ -14,7 +14,20 @@ int zahl1 = 2 + 2 * 2; // 6
 int zahl2 = (2 + 2) * 2; // 8
 ```
 
-Mit dem Inkrementierungsoperator `++` kann man eine Zahl um eins erhöhen, und mit dem Dekrementierungsoperator `--` um eins verringern:
+Die `+=` und `-=` Operatoren sind nützlich um eine Erhöhung oder Verminderung einer Zahl kompakt zu schreiben.
+So kann beispielsweise 
+
+```cs
+zahl1 = zahl1 + 3;
+```
+
+geschrieben werden als
+
+```
+zahl1 += 3;
+```
+
+Da man eine Erhöhung oder Verminderung einer Zahl um `1` besonders häufig benötigt gibt es hierfür nochmal zusätzliche Operatoren, den sogenannten Inkrementierungsoperator `++` und den Dekrementierungsoperator `--`:
 
 ```cs
 int i = 1;
@@ -32,10 +45,11 @@ int divisionsRest = 11 % 3; // 2
 Vergleichsoperatoren
 --------------------
 
-Desweiteren gibt es eine Reihe von nützlichen Vergleichsoperatoren: `==`, `!=`, `<`, `>`, `<=`, `>=`.
-Vergleiche der beiden obigen Zahlen liefern die folgenden Ergebnisse: 
+Des weiteren gibt es eine Reihe von nützlichen Vergleichsoperatoren: `==`, `!=`, `<`, `>`, `<=`, `>=`. Diese haben als Rückgabewert einen `bool`, wie die folgenden Beispiele zeigen:
 
 ```cs
+int zahl1 = 6;
+int zahl2 = 8;
 bool zahlenSindGleich = zahl1 == zahl2; // false
 zahl1 != zahl2 // true
 zahl1 < zahl2 // true

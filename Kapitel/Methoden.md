@@ -15,10 +15,10 @@ double BerechneQuadrat(double zahl)
 
 ```
 
-Als erstes muss man den Rückgabewert spezifizieren, hier ist dieser ein `double`. Dann wählt und schreibt man einen aussagekräftigen Namen. Danach folgen Klammern,  welche Parameter beinhalten können. In unserem Beispiel möchten wir die Methode mit einem einzelnen Argument aufrufen können und definieren den Parameter `double zahl`.
-Das `return` Schlüsselwort sorgt dafür, dass das Ergebnis der Berechnung von der Methode zurückgegeben wird.
+Als erstes muss man den Rückgabewert spezifizieren, hier ist dieser ein `double`. Dann wählt und schreibt man einen aussagekräftigen Namen. Danach folgen Klammern,  welche **Parameter** beinhalten können. In unserem Beispiel möchten wir die Methode mit einem einzelnen Argument aufrufen und definieren den Parameter `double zahl`.
+Das `return` Schlüsselwort sorgt dafür, dass an dieser Stelle das Ergebnis der Berechnung von der Methode zurückgegeben wird.
 
-Die Methode kann nun im Code aufgerufen werden: 
+Wir können die Methode nun im Code wie folgt aufrufen: 
 
 ```cs
 double d = 1.5;
@@ -26,15 +26,7 @@ double quadrat = BerechneQuadrat(d);
 Console.WriteLine($"Das Quadrat von {d} ist {quadrat}.");
 ```
 
-Hier ist ein weiteres Beispiel für eine Methode die überprüft ob eine Zahl gerade ist.
-
-```cs
-int ZahlIstGerade(int zahl)
-{
-    return zahl % 2 == 0;
-}
-
-```
+Vielleicht ist dir bereits aufgefallen, dass man bei Methoden zwischen **Parametern** und **Argumenten** unterscheidet. Als Parameter bezeichnet man die Platzhalter innerhalb einer Methode. Unsere Methode oben hat beispielsweise nur den Parameter `double zahl`. Argumente hingegen werden beim Methodenaufruf in die Parameterliste eingesetzt. Im obigen Beispiel ist das Argument folglich `1.5`.
 
 Methoden die keinen Rückgabewert haben müssen das Schlüsselwort `void` als Rückgabetyp aufweisen. Zum Beispiel: 
 
@@ -42,26 +34,24 @@ Methoden die keinen Rückgabewert haben müssen das Schlüsselwort `void` als R�
 void GibDasQuadratAufDerKonsoleAus(double d)
 {
     Console.WriteLine($"Das Quadrat von {d} ist {BerechneQuadrat(d)}.");
-}
-
-```
-
-Wie du siehst kann man auch problemlos innerhalb einer Methode eine andere Methode aufrufen.
-
-Eine `void` Methode kann durch das Schlüsselwort `return` abgebrochen werden:
-```cs
-void Begrüßung(d)
-{
-    Console.WriteLine("Herzlich willkommen");
     return;
-    Console.WriteLine("zum Programmierkurs");
+}
+```
+
+Das `return` Statement in der letzten Zeile der `void` Methode ist optional. Es kann jedoch an anderen Stellen eingesetzt werden um die Methode vorzeitig zu beenden.
+
+Hat eine Methode mehrere Parameter, so werden diese durch ein Komma getrennt:
+
+```cs
+void Begrüßung(string name1, string name2)
+{
+    Console.WriteLine($"Herzlich willkommen zum Kurs {name1} und {name2}!";
+    return;
 }
 
 ```
 
-Diese Methode gibt nur die Zeile `Herzlich willkommen` aus.
-
-Achte bei Methoden darauf, dass diese im Gegensatz zu Variablen mit einem Großbuchstaben beginnen. 
+> Mit Methoden können wir unseren Code sehr sprechend gestalten, lege deshalb am besten großen Wert auf die Benennung deiner Methoden. Achte bitte außerdem darauf, dass Methoden im Gegensatz zu Variablen mit einem Großbuchstaben beginnen sollten. 
 
 ---
 
