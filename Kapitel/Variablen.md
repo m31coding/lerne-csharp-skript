@@ -17,12 +17,11 @@ Eine **Schublade** ist eine Metapher für eine **Variable**. Wir können eine Va
 string begrüßung = "Willkommen!";
 ```
 
-Zunächst muss der Typ der Variablen angegeben werden, in unserem Fall wollen wir eine Zeichenkette speichern. Wir wählen also den Typ `string`. Als nächstes überlegen wir uns einen aussagekräftigen Namen, zum Beispiel `begrüßung`. Durch das Gleichheitszeichen (Zuweisungsoperator) weisen wir der Variablen den Wert "Willkommen!" zu. Da es sich um einen Befehl handelt, müssen wir diesen außerdem mit dem Semikolon `;` abschließen.
+Zunächst muss der Typ der Variablen angegeben werden, in unserem Fall wollen wir eine Zeichenkette speichern. Wir wählen also den Typ `string`. Als nächstes überlegen wir uns einen aussagekräftigen Namen, zum Beispiel `begrüßung`. Durch das Gleichheitszeichen (Zuweisungsoperator) weisen wir der Variablen den Wert `"Willkommen!"` zu. Da es sich um einen Befehl handelt, müssen wir diesen außerdem mit dem Semikolon `;` abschließen.
 
-Und schon haben wir unsere erste Variable definiert und einen Wert abgelegt!
+Und schon haben wir unsere erste Variable definiert und einen Wert abgelegt! 
 
 Die Definition und Zuweisung kann übrigens auch in zwei Schritten erfolgen:
-
 
 ```cs
 string begrüßung;
@@ -32,6 +31,8 @@ begrüßung = "Willkommen!"
 Beim zweiten Befehl müssen wir nur den Namen der Variablen verwenden, da wir den Typ bereits mit dem ersten Befehl bekannt gegeben haben. 
 
 Da das Programm alle Befehle Schritt für Schritt abarbeitet dürften die beiden Zeilen allerdings nicht vertauscht werden. Die Variable muss zuerst definiert werden bevor wir eine Zuweisung machen können.
+
+> Tipp: Falls der Wert der Variablen bereits während der Definition bekannt ist schreibe die Definition und Zuweisung am besten in eine Zeile.
 
 Änderung von Werten
 -------------------
@@ -62,6 +63,7 @@ Variablen sollten mit einem kleinen Buchstaben anfangen und zusammengeschrieben 
 - begüßungAnAlle
 
 ---
+
 
 > Perfekt!, mit diesem Wissen bist du sehr gut gerüstet für die weiteren Kapitel.
 

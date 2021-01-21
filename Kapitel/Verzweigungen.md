@@ -3,7 +3,7 @@
 Verzweigungen
 ==============
 
-In vielen Situationen wollen wir einen Teil eines Programms nur dann ausführen wenn eine Bedingung gegeben ist. Dies kann durch den **if Ausdruck** programmiert werden.
+In vielen Situationen wollen wir einen Teil eines Programms nur dann ausführen wenn eine bestimmte Bedingung gegeben ist. Dies kann durch den **if Ausdruck** programmiert werden.
 
 ```cs
 if(bedingung)
@@ -70,6 +70,15 @@ else
 }
 ```
 
+Als Argument für eine Verzweigung kann natürlich auch ein Methodenaufruf eingesetzt werden, solange es sich um eine Methode handelt die `true` oder `false` zurückgibt. Zum Beispiel:
+
+```cs
+if (SpielBeendet(punkteSpieler1, punkteSpieler2))
+{
+  Console.WriteLine($"Das Spiel ist aus! Punkte Spieler 1 = {punkteSpieler1}. Punkte Spieler 2 = {punkteSpieler2}.");
+}
+```
+
 Bedingter Operator
 --------------------
 
@@ -96,7 +105,7 @@ else
 Console.WriteLine(ausgabe);
 ```
 
-umgeschrieben werden zu
+geschrieben werden als
 
 ```cs
 string ausgabe = spieler1HatGewonnen ? "Spieler 1 hat gewonnen!" : "Spieler 2 hat gewonnen!";

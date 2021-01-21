@@ -27,6 +27,13 @@ geschrieben werden als
 zahl1 += 3;
 ```
 
+Analog zu den Operatoren `+=` und `-=` gibt es auch die Operatoren `*=` und `/=`:
+
+```cs
+zahl1 *= 4; // Die Zahl wird vervierfacht.
+zahl2 /= 2; // Die Zahl wird halbiert.
+```
+
 Da man eine Erhöhung oder Verminderung einer Zahl um `1` besonders häufig benötigt gibt es hierfür nochmal zusätzliche Operatoren, den sogenannten Inkrementierungsoperator `++` und den Dekrementierungsoperator `--`:
 
 ```cs

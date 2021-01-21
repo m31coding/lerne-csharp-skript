@@ -31,6 +31,8 @@ Schleifenbefehle
 Innerhalb einer Schleife kann man mit dem Befehl `break` die Schleife beenden, und mit dem Befehl `continue` die aktuelle Iteration beenden und in die nächste springen.
 
 
+while SpielIstNichtZuEnde
+
 Übung
 --------
 

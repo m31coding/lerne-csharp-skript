@@ -40,6 +40,13 @@ void GibDasQuadratAufDerKonsoleAus(double d)
 
 Das `return` Statement in der letzten Zeile der `void` Methode ist optional. Es kann jedoch an anderen Stellen eingesetzt werden um die Methode vorzeitig zu beenden.
 
+Anstelle von Variablen kann man natürlich auch direkt Werte in eine Methode einsetzen:
+
+```cs
+GibDasQuadratAufDerKonsoleAus(1.5);
+GibDasQuadratAufDerKonsoleAus(4);
+```
+
 Hat eine Methode mehrere Parameter, so werden diese durch ein Komma getrennt:
 
 ```cs
