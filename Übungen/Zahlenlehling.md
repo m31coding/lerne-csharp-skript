@@ -31,8 +31,8 @@ Hervorragend, du hast meine Zahl in 6 versuchen erraten!
 Für diese Programm müssen wir eine Zufallszahl erzeugen. Dies geschieht mittels der `Random` Klasse. Durch die folgenden Zeilen erhaltet ihr beispielsweise einen Zufallszahlengenerator sowie eine Zufallszahl zwischen 0 und 100:
 
 ```cs
-Random zahlenGenerator = new Random();
-int zufallszahl = zahlenGenerator.Next(0, 100);
+Random zahlengenerator = new Random();
+int zufallszahl = zahlengenerator.Next(0, 100);
 ```
 
 Falls ihr, wie in unserem Fall, nur eine einzelne Zufallszahl braucht, könnt ihr dies auch in einer einzelnen Zeile schreiben:

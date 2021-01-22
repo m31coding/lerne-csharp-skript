@@ -94,7 +94,7 @@ namespace HelloWorld
 Konvertierung zwischen Stunden und Sekunden
 --------------------------------------------
 
-Schreibe die Methoden `double ErhalteSekunden(double stunden)` und `double ErhalteStunden(double sekunden)`.
+Schreibe die Methoden `static double ErhalteSekunden(double stunden)` und `static double ErhalteStunden(double sekunden)`.
 
 <details><summary><b>Lösung für ErhalteSekunden</b></summary>
 
@@ -122,7 +122,7 @@ Bonusaufgaben
 Test ob eine Zahl gerade ist
 -----------------------------
 
-Schreibe eine Methode `bool ZahlIstGerade(int zahl)` die testet ob eine Zahl gerade ist.
+Schreibe eine Methode `static bool ZahlIstGerade(int zahl)` die testet ob eine Zahl gerade ist.
 
 <details><summary><b>Hinweis</b></summary>
 
@@ -134,11 +134,11 @@ Skalierung
 
 Angenommen bei einem Spiel können die Spieler zwischen 10 und 250 Punkte erzielen. Wir wollen das Endergebnis in eine Sternebewertung umrechnen wobei es 0 Sterne für die niedrigste und 5 Sterne für die höchste Punktzahl gibt. Dazwischen hätten wir gerne ein lineares (proportionales) Verhalten.
 
-- Schreibe eine Methode `double AnzahlSterne(int punktzahl)`.
+- Schreibe eine Methode `static double AnzahlSterne(int punktzahl)`.
 
 Wir möchten nun die Methode für verschiedene Spiele verwenden können die unterschiedliche minimale und maximale Punktzahlen erlauben.
 
-- Verallgemeinere die Methode zu `double AnzahlSterne(int punktZahl, int minimalPunktzahl, int maximalPunktzahl)`.
+- Verallgemeinere die Methode zu `static double AnzahlSterne(int punktZahl, int minimalPunktzahl, int maximalPunktzahl)`.
 
 
 

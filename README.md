@@ -16,6 +16,8 @@ Das Skript zum Programmierkurs.
     - [Übungen: Methoden](Übungen/Methoden.md)
 - [Verzweigungen](Kapitel/Verzweigungen.md)
 - [Operatoren der Wahrheitswerte](Kapitel/OperatorenDerWahrheitswerte.md)
+    - [Quiz: Wahrheitswerte](https://forms.gle/eVSgLtWgCNyw5NsJ7)
+    - [Übungen: Verzweigungen und Wahrheitswerte](Übungen/VerzweigungenUndWahrheitswerte.md)
 - [Schleifen](Kapitel/Schleifen.md)
 - [Benutzereingaben](Kapitel/Benutzereingaben.md)
     - [Übungen: Benutzereingaben](Übungen/Benutzereingaben.md)
