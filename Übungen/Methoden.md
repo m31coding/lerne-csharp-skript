@@ -129,6 +129,17 @@ Schreibe eine Methode `static bool ZahlIstGerade(int zahl)` die testet ob eine Z
 - Verwende den Modulooperator `%`.
 </details>
 
+<details><summary><b>Lösung</b></summary>
+
+```cs
+static bool ZahlIstGerade(int zahl)
+{
+    return zahl % 2 == 0;
+}
+```
+
+</details>
+
 Skalierung
 -----------
 
@@ -136,10 +147,34 @@ Angenommen bei einem Spiel können die Spieler zwischen 10 und 250 Punkte erziel
 
 - Schreibe eine Methode `static double AnzahlSterne(int punktzahl)`.
 
+<details><summary><b>Lösung</b></summary>
+
+```cs
+// [10, 250] => [0, 5]
+static double AnzahlSterne(int punktzahl)
+{
+    double relativePunktzahl = (punktzahl - 10) / (double) (250 - 10);
+    return relativePunktzahl * 5;
+}
+```
+
+</details>
+
 Wir möchten nun die Methode für verschiedene Spiele verwenden können die unterschiedliche minimale und maximale Punktzahlen erlauben.
 
-- Verallgemeinere die Methode zu `static double AnzahlSterne(int punktZahl, int minimalPunktzahl, int maximalPunktzahl)`.
+- Verallgemeinere die Methode zu `static double AnzahlSterne(int punktzahl, int minimalpunktzahl, int maximalpunktzahl)`.
 
+<details><summary><b>Lösung</b></summary>
+
+```cs
+static double AnzahlSterne(int punktzahl, int minimalpunktzahl, int maximalpunktzahl)
+{
+    double relativePunktzahl = (punktzahl - minimalpunktzahl) / (maximalpunktzahl - minimalpunktzahl);
+    return relativePunktzahl * 5;
+}
+```
+
+</details>
 
 
 

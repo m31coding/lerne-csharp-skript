@@ -101,9 +101,55 @@ Schreibe eine Methode `static bool ZahlIstUngerade(int zahl)` die testet ob eine
 - Verwende deine Methode `static ZahlIstGerade`
 </details>
 
+<details><summary><b>Lösung</b></summary>
+
+```cs
+static bool ZahlIstUngerade(int zahl)
+{
+    return !ZahlIstGerade(zahl);
+}
+```
+
+</details>
+
 Maximum von drei Zahlen
 -----------------------
 
 Schreibe eine Methode `static double Maximum(double d1, double d2, double d3)` die das Maximum von drei Zahlen zurückgibt.
+
+<details><summary><b>Lösung</b></summary>
+
+```cs
+static double Maximum(double d1, double d2, double d3)
+{
+    if (d1 > d2 && d1 > d3)
+    {
+        return d1;
+    }
+    else if(d2 > d1 && d2 > d3)
+    {
+        return d2;
+    }
+    else
+    {
+        return d3;
+    }
+}
+```
+
+</details>
+
+<details><summary><b>Elegantere Lösung</b></summary>
+
+Verwende deine Maximum Methode für zwei Zahlen:
+
+```cs
+static double Maximum(double d1, double d2, double d3)
+{
+    return Maximum(d1, Maximum(d2, d3));
+}
+```
+
+</details>
 
 ### [Kursinhalt](../README.md)
