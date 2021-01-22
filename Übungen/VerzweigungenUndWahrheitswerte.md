@@ -98,7 +98,7 @@ Schreibe eine Methode `static bool ZahlIstUngerade(int zahl)` die testet ob eine
 
 <details><summary><b>Hinweis</b></summary>
 
-- Verwende deine Methode `static ZahlIstGerade`
+- Verwende deine Methode `static ZahlIstGerade`.
 </details>
 
 <details><summary><b>Lösung</b></summary>
@@ -141,7 +141,7 @@ static double Maximum(double d1, double d2, double d3)
 
 <details><summary><b>Elegantere Lösung</b></summary>
 
-Verwende deine Maximum Methode für zwei Zahlen:
+Verwende die Maximum Methode für zwei Zahlen:
 
 ```cs
 static double Maximum(double d1, double d2, double d3)
