@@ -3,6 +3,9 @@
 Übungen zu Methoden
 ===================
 
+Begrüßungsmethode
+------------------
+
 Schreibe in die Klasse `program` und unter die `main` Methode eine Methode `static void Begrüßung(string name)`. Rufe diese in der `main` Methode mit verschiedenen Namen auf. 
 
 Achte darauf dass du das `static` Schlüsselwort zu Beginn der Definition nicht vergisst. Was es damit auf sich hat werden wir zu einem späteren Zeitpunkt lernen. Der Knackpunkt ist dass man aus der statischen `main` Methode heraus nur andere statische Methoden direkt aufrufen kann.
@@ -41,6 +44,9 @@ namespace HelloWorld
 
 ```
 </details>
+
+Ausgabe der Grundrechenarten
+----------------------------
 
 Schreibt außerdem eine Methode `static void GebeAlleGrundrechenartenAus(double zahl1, double zahl2)` die für die vier Grundrechenarten jeweils eine Zeile in der Konsole ausgibt, wie ihr es bereits programmiert habt. Rufe auch diese neue Methode in der `main` Methode auf.
 
@@ -85,23 +91,46 @@ namespace HelloWorld
 ```
 </details>
 
+Konvertierung zwischen Stunden und Sekunden
+--------------------------------------------
+
+Schreibe die Methoden `double ErhalteSekunden(double stunden)` und `double ErhalteStunden(double sekunden)`.
+
+<details><summary><b>Lösung für ErhalteSekunden</b></summary>
+
+```cs
+static double ErhalteSekunden(double stunden)
+{
+    return stunden * 3600;
+}
+```
+</details>
+
+<details><summary><b>Lösung für ErhalteStunden</b></summary>
+
+```cs
+static double ErhalteStunden(double sekunden)
+{
+    return sekunden / 3600;
+}
+```
+</details>
+
 Bonusaufgaben 
---------------
+=============
 
-### - Konvertierung zwischen Stunden und Sekunden
-
-Schreibe die Methoden `double ErhalteSekunden(double Stunden)` und `double ErhalteStunden(double sekunden)`.  
-
-### - Test ob eine Zahl gerade ist
+Test ob eine Zahl gerade ist
+-----------------------------
 
 Schreibe eine Methode `bool ZahlIstGerade(int zahl)` die testet ob eine Zahl gerade ist.
 
-<details><summary>Hinweis</summary>
+<details><summary><b>Hinweis</b></summary>
 
 - Verwende den Modulooperator `%`.
 </details>
 
-### - Skalierung
+Skalierung
+-----------
 
 Angenommen bei einem Spiel können die Spieler zwischen 10 und 250 Punkte erzielen. Wir wollen das Endergebnis in eine Sternebewertung umrechnen wobei es 0 Sterne für die niedrigste und 5 Sterne für die höchste Punktzahl gibt. Dazwischen hätten wir gerne ein lineares (proportionales) Verhalten.
 
