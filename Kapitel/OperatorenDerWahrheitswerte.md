@@ -120,7 +120,7 @@ Ein Sieger kann nur dann feststehen wenn genau einer der beiden Spieler die voll
 Präzedenz
 ---------
 
-Die Rangfolge der Wahrheitsoperatoren ist `!`, `==`, `!=`, `^`, `&&`, `||`. So gilt beispielsweise 
+Die Rangfolge der Wahrheitsoperatoren ist `!`, `==`, `!=`, `^`, `&&`, `||`. So gilt beispielsweise:
 
 ```cs
 true || true && false // true
