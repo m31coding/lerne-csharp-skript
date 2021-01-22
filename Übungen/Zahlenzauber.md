@@ -334,8 +334,8 @@ using System.Diagnostics;
 Eine Zeitmessung kann dann mit einer Stopwatch gestartet werden: 
 
 ```cs
- Stopwatch watch = new Stopwatch();
-            watch.Start();
+Stopwatch watch = new Stopwatch();
+watch.Start();
 ```
 
 Anschließend könnt ihr jeder Zeit die vergangene Zeit abrufen:
