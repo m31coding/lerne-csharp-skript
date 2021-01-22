@@ -142,10 +142,22 @@ Es ist hilfreich ein paar Umformungen im Kopf zu haben die deinen Code besser le
 !(b1 || b2) <=> !b1 && !b2
 ```
 
-Dies sind die de-morganschen Gesetze der Aussagenlogik! Das untere der beiden Gesetze besagt zum Beispiel dass die folgenden Sätze äquivalent sind:
+Dies sind die de-morganschen Gesetze der Aussagenlogik! Das untere der beiden Gesetze besagt zum Beispiel dass die folgenden beiden Codezeilen äquivalent sind:
+
+```cs
+bool spielGehtWeiter = !(spieler1HatGewonnen || spieler2HatGewonnen);
+```
+
+```cs
+bool spielGehtWeiter = !spieler1HatGewonnen && !spieler2HatGewonnen;
+```
 
 -  "Das Spiel geht weiter falls nicht Spieler 1 oder Spieler 2 gewonnen hat."
 - "Das Spiel geht weiter falls Spieler 1 nicht gewonnen hat und Spieler 2 nicht gewonnen hat".
+
+In diesem Beispiel ist die erste Formulierung meiner Meinung nach etwas besser lesbar.
+
+> Welche Form besser lesbar ist hängt sehr stark vom Einzelfall ab. Es lohnt sich beim Programmieren kurz innezuhalten und sich bewusst für die eine oder andere Form zu entscheiden.   
 
 
 ---
