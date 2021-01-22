@@ -21,6 +21,7 @@ Das Skript zum Programmierkurs.
 - [Schleifen](Kapitel/Schleifen.md)
 - [Benutzereingaben](Kapitel/Benutzereingaben.md)
 - [**Übungen**: Schleifen und Benutzereingaben](Übungen/SchleifenUndBenutzereingaben.md)
+- [**Abschlussübung**: Zahlenzauber](Übungen/Zahlenzauber.md)
 
 
 ## Ressourcen

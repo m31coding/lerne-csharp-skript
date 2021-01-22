@@ -1,16 +1,19 @@
 ### [Kursinhalt](../README.md)
 
-Abschlussübung: Zahlenlehrling
-==============================
+Zahlenlehrling
+================
 
-Rechtsklick auf Projektmappe.
+Projekt anlegen
+---------------
 
-Hinzufügen, 
-Neues Projekt erstellen
-Gib dem Projekt einen Name: Zahlenlehrling
+Für diese Übung wollen wir ein extra Projekt anlegen. Mache im Projektmappen-Explorer auf der rechten Seite einen rechtsklick auf die Projektmappe *Programmierkurs*. Dann wählst du  *Hinzufügen* -> *Neues Projekt* aus. Wähle als Typ Konsolen-App (.NET Core) und klicke auf weiter. Gib dem Projekt den Namen *Zahlenlehrling* und klicke auf *Erstellen*. Nun sollte das Projekt im Projektmappen-Explorer erscheinen.
 
-Rechtsklick auf Zahlenlehrling Projekt
-Als Startprojekt festlegen.
+Klicke mit rechts auf das neue Projekt *Zahlenlehrling* und wähle *Als Startprojekt festlegen* (das ist die Option mit dem Rädchen). Nun kannst du das neue Projekt starten.
+
+Aufgabe
+--------
+
+Wir wollen ein Programm schreiben, in welchem der Computer uns dazu auffordert eine geheime Zahl zu erraten. Die geheime Zahl soll hierbei zufällig sein. Nachdem wir eine Zahl geraten und eingegeben haben hat sagt uns der Computer ob die geheime Zahl größer, kleiner, oder genau richtig ist. Behandle außerdem Eingaben die keine Zahl sind, und zähle die Versuche die der Benutzer braucht um die richtige Zahl zu erraten. Die Konsolenausgabe könnte wie folgt aussehen:
 
 ```sh
 Willkommen, errate meine geheime zwischen 0 und 100 Zahl!
@@ -229,27 +232,118 @@ namespace Zahlenlehrling
 
 </details>
 
-Refactoring
------------
 
-<details>
-  <summary><b>Bitte erst auklappen, nachdem wir die Übung gemeinsam besprochen haben.</b></summary>
+Bonusaufgabe: Zahlenzauberer
+=============================
 
-TODO
+Wir wollen nun das umgekehrte Programm schreiben: Der Computer soll uns auffordern an eine geheime Zahl zu denken. Anschließend versucht der Computer diese Zahl zu erraten und wir teilen ihm über die Pfeiltasten mit ob er richtig geraten hat. Lege auch hierzu ein neues Projekt an und nenne es *Zahlenzauberer*.
 
+Die Ausgabe könnte wie folgt aussehen:
+
+```sh
+Willkommen, denke an eine geheime zwischen 0 und 100!
+
+Ist die Zahl größer, drücke die Pfeiltaste nach oben!
+Ist deine geheime Zahl kleiner, dann drücke dagegen die Pfeiltaste nach unten!
+Und falls ich die Zahl erraten habe ... drücke Enter!
+
+Ist deine geheime Zahl die 50?
+
+Ist deine geheime Zahl die 25?
+
+Ist deine geheime Zahl die 37?
+
+Ist deine geheime Zahl die 43?
+
+Ist deine geheime Zahl die 40?
+
+Ist deine geheime Zahl die 41?
+
+Ist deine geheime Zahl die 42?
+
+Ich wusste es!
+```
+
+<details><summary><b>Lösung</b></summary>
+
+```cs
+using System;
+
+namespace Zahlenlehrling
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int min = 0;
+            int max = 100;
+            Console.WriteLine($"Willkommen, denke an eine geheime zwischen {min} und {max}!");
+            Console.WriteLine();
+            Console.WriteLine("Ist die Zahl größer, drücke die Pfeiltaste nach oben!");
+            Console.WriteLine("Ist deine geheime Zahl kleiner, dann drücke dagegen die Pfeiltaste nach unten!");
+            Console.WriteLine("Und falls ich die Zahl erraten habe ... drücke Enter!");
+            Console.WriteLine();
+
+            int gerateneZahl = RateZahl(min, max);
+
+            while (true)
+            {
+                Console.WriteLine($"Ist deine geheime Zahl die {gerateneZahl}?");
+                ConsoleKey taste = Console.ReadKey().Key;
+                Console.WriteLine();
+
+                if (taste == ConsoleKey.UpArrow)
+                {
+                    min = gerateneZahl;
+                    gerateneZahl = RateZahl(min, max);
+                }
+                else if (taste == ConsoleKey.DownArrow)
+                {
+                    max = gerateneZahl;
+                    gerateneZahl = RateZahl(min, max);
+                }
+                else if (taste == ConsoleKey.Enter)
+                {
+                    Console.WriteLine("Ich wusste es!");
+                    break;
+                }
+            }
+
+            static int RateZahl(int min, int max)
+            {
+                return (min + max) / 2;
+            }
+        }
+    }
+}
+```
 </details>
 
-Hausaufgabe
------------
+Bonusaufgabe: Zahlenlehrling mit Wertung
+-----------------------------------------
 
+Wir wollen nun nicht nur die Anzahl Versuche ausgeben die der Benutzer gebraucht hat um die Zahl zu erraten, sondern eine Sternewertung zwischen 0 und 5. In diese Wertung soll neben der Anzahl Versuche auch die benötigte Zeit einfließen.
 
+Um Zeitmessungen durchzuführen brauchen wir einen zusätzlichen Namensraum oben in unserem Code:
 
-// ```cs
-// Stopwatch stoppUhr = new Stopwatch();
-// stoppUhr.Start();
-// // code 
-// int vergangenenZeitInMS = stoppUhr.Ellapsed;
-// ```
+```cs
+using System.Diagnostics;
+```
+
+Eine Zeitmessung kann dann mit einer Stopwatch gestartet werden: 
+
+```cs
+ Stopwatch watch = new Stopwatch();
+            watch.Start();
+```
+
+Anschließend könnt ihr jeder Zeit die vergangene Zeit abrufen:
+```cs
+long vergangeneMillisekunden = watch.ElapsedMilliseconds;
+```
+
+Überlege dir wie du aus den Größen Anzahl Versuche und vergangene Zeit eine Wertung berechnen kannst. Hier gibt es kein richtig oder falsch, versuche dich einfach daran :).
 
 ---
 

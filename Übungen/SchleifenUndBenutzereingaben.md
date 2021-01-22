@@ -33,12 +33,12 @@ for (int i = 10; i >= 0; i--)
 Passwortabfrage
 -----------------
 
-Schreibe eine Methode `static void FragePasswortAb()` welche den Benutzer dazu auffordert ein Passwort einzugeben. Überprüfe ob das eingegebene Passwort "1234" lautet. Ist das Passwort korrekt? Dann teile dies dem Benutzer mit. Andernfalls fordere ihn dazu auf es erneut einzugeben
+Schreibe eine Methode `static void FragePasswortAb()` welche den Benutzer dazu auffordert ein Passwort einzugeben. Überprüfe ob das eingegebene Passwort "1234" lautet. Teile dem Benutzer mit ob das eingegebene Passwort korrekt ist. Falls es falsch ist, fordere ihn dazu auf es erneut einzugeben.
 
 <details>
   <summary><b>Hinweis</b></summary>
 
-  - Verwende eine `while`-Schleife.
+  - Verwende eine `while(true)`-Schleife.
   - Verwende die Methode `Console.ReadLine()`.
 </details>
 
