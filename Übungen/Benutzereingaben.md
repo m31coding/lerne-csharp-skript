@@ -4,6 +4,8 @@
 Übungen zu Benutzereingaben
 ===========================
 
+TODO: berechne Grundrechenarten: Zahl eingeben
+
 Übungen zu Benutzereingaben
 ----------------------------
 
