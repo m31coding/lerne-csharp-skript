@@ -88,9 +88,6 @@ static void ZufälligeBegrüßung(string name)
 </details>
 
 
-Bonusaufgaben
-==============
-
 Test ob eine Zahl ungerade ist
 -----------------------------
 

@@ -92,9 +92,6 @@ static void FragePasswortAb()
 ```
 </details>
 
-Bonusaufgaben
-==============
-
 Fakultät
 --------
 

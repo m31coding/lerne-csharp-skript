@@ -116,9 +116,6 @@ static double ErhalteStunden(double sekunden)
 ```
 </details>
 
-Bonusaufgaben 
-=============
-
 Test ob eine Zahl gerade ist
 -----------------------------
 

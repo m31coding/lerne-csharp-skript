@@ -1,7 +1,7 @@
 ### [Kursinhalt](../README.md)
 
 Zahlenlehrling
-================
+===============
 
 Projekt anlegen
 ---------------
@@ -232,9 +232,34 @@ namespace Zahlenlehrling
 
 </details>
 
+Zeitmessung und Wertung
+------------------------
 
-Bonusaufgabe: Zahlenzauberer
-=============================
+Wir wollen nun nicht nur die Anzahl Versuche ausgeben die der Benutzer gebraucht hat um die Zahl zu erraten, sondern eine Sternewertung zwischen 0 und 5. In diese Wertung soll neben der Anzahl Versuche auch die benötigte Zeit einfließen.
+
+Um Zeitmessungen durchzuführen müssen wir einen zusätzlichen Namensraum unserem Code verwenden:
+
+```cs
+using System.Diagnostics;
+```
+
+Eine Zeitmessung kann dann mit einer Stopwatch gestartet werden: 
+
+```cs
+Stopwatch watch = new Stopwatch();
+watch.Start();
+```
+
+Anschließend könnt ihr jeder Zeit die vergangene Zeit abrufen:
+```cs
+long vergangeneMillisekunden = watch.ElapsedMilliseconds;
+```
+
+Überlege dir wie du aus den Größen Anzahl Versuche und vergangene Zeit eine Wertung berechnen kannst. Hier gibt es kein richtig oder falsch, versuche dich einfach daran :).
+
+
+Zahlenzauberer
+===============
 
 Wir wollen nun das umgekehrte Programm schreiben: Der Computer soll uns auffordern an eine geheime Zahl zu denken. Anschließend versucht der Computer diese Zahl zu erraten und wir teilen ihm über die Pfeiltasten mit ob er richtig geraten hat. Lege auch hierzu ein neues Projekt an und nenne es *Zahlenzauberer*.
 
@@ -319,31 +344,6 @@ namespace Zahlenlehrling
 }
 ```
 </details>
-
-Bonusaufgabe: Zahlenlehrling mit Wertung
------------------------------------------
-
-Wir wollen nun nicht nur die Anzahl Versuche ausgeben die der Benutzer gebraucht hat um die Zahl zu erraten, sondern eine Sternewertung zwischen 0 und 5. In diese Wertung soll neben der Anzahl Versuche auch die benötigte Zeit einfließen.
-
-Um Zeitmessungen durchzuführen brauchen wir einen zusätzlichen Namensraum oben in unserem Code:
-
-```cs
-using System.Diagnostics;
-```
-
-Eine Zeitmessung kann dann mit einer Stopwatch gestartet werden: 
-
-```cs
-Stopwatch watch = new Stopwatch();
-watch.Start();
-```
-
-Anschließend könnt ihr jeder Zeit die vergangene Zeit abrufen:
-```cs
-long vergangeneMillisekunden = watch.ElapsedMilliseconds;
-```
-
-Überlege dir wie du aus den Größen Anzahl Versuche und vergangene Zeit eine Wertung berechnen kannst. Hier gibt es kein richtig oder falsch, versuche dich einfach daran :).
 
 ---
 
