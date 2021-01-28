@@ -257,13 +257,12 @@ long vergangeneMillisekunden = watch.ElapsedMilliseconds;
 
 Überlege dir wie du aus den Größen Anzahl Versuche und vergangene Zeit eine Wertung berechnen kannst. Hier gibt es kein richtig oder falsch, versuche dich einfach daran :).
 
-
 Zahlenzauberer
 ===============
 
 Wir wollen nun das umgekehrte Programm schreiben: Der Computer soll uns auffordern an eine geheime Zahl zu denken. Anschließend versucht der Computer diese Zahl zu erraten und wir teilen ihm über die Pfeiltasten mit ob er richtig geraten hat. Lege auch hierzu ein neues Projekt an und nenne es *Zahlenzauberer*.
 
-Die Ausgabe könnte wie folgt aussehen:
+Die Ausgabe könnte für die geheime Zahl 42 wie folgt aussehen:
 
 ```sh
 Willkommen, denke an eine geheime zwischen 0 und 100!
@@ -289,7 +288,24 @@ Ist deine geheime Zahl die 42?
 Ich wusste es!
 ```
 
-<details><summary><b>Lösung</b></summary>
+Das drücken einer Pfeil- oder der Entertaste kann auf der Konsole leider nicht dargestellt werden, hierfür wird lediglich automatisch eine leere Zeile ausgegeben.
+
+Überlege dir zunächst eine Strategie wie das Programm die nächste Zahl ermitteln soll, sodass die richtige Zahl mit möglichst wenigen Versuchen erraten wird. Versuche diese Strategie in deinem Programm abzubilden. Es ist hilfreich wenn du dabei an die vorherige Übung *Zahlenlehrling* denkst, mit welcher Strategie hast du die nächste Zahl gewählt und eingegeben?
+
+<details>
+<summary><b>Hinweis 1</b></summary>
+
+- Die gedachte Zahl befindet sich zu Beginn zwischen `int min = 0` und `int max = 100`. Als erster Rateversuch eignet sich hiervon die Mitte des Intervals.
+</details>
+
+<details>
+<summary><b>Hinweis 2</b></summary>
+
+- Nach jedem Rateversuch kannst du im Programm berücksichtigen, dass sich entweder die untere oder die obere Grenze des Intervals geändert hat. 
+- Als nächsten Rateversuch wählt man am besten wieder die Mitte des neuen Intervals.
+</details>
+
+<details><summary><b>Gesamtlösung</b></summary>
 
 ```cs
 using System;
@@ -333,6 +349,10 @@ namespace Zahlenlehrling
                     Console.WriteLine("Ich wusste es!");
                     break;
                 }
+                else
+                {
+                    Console.WriteLine("Das hilft mir nicht weiter...!");
+                }
             }
 
             static int RateZahl(int min, int max)
@@ -343,6 +363,12 @@ namespace Zahlenlehrling
     }
 }
 ```
+</details>
+
+<details>
+<summary><b>Ich habe die Aufgabe gelöst :)</b></summary>
+
+>Hervorragend!, du hast dir einen Algorithmus ausgedacht der möglichst schnell zur gedachten Zahl führt und diesen auch noch blitzsauber implementiert. So schnell kann dir keiner mehr etwas vormachen!
 </details>
 
 ---
