@@ -1,7 +1,7 @@
 ### [Kursinhalt](../README.md)
 
-Listen, Arrays, und LINQ
-=========================
+Listen und Arrays
+==================
 
 Bisher haben wir für jeden Wert den wir speichern wollten eine extra Variablen angelegt.
 In diesem Kapitel lernen wir Datenstrukturen kennen, die es uns ermöglichen mehrere Werte in einer einzelnen Variablen zu speichern und somit zusammengehörige Werte zusammenzufassen.
