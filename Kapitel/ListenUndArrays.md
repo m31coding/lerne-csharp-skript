@@ -4,14 +4,14 @@ Listen und Arrays
 ==================
 
 Bisher haben wir für jeden Wert den wir speichern wollten eine extra Variablen angelegt.
-In diesem Kapitel lernen wir Datenstrukturen kennen, die es uns ermöglichen mehrere Werte in einer einzelnen Variablen zu speichern und somit zusammengehörige Werte zusammenzufassen.
+In diesem Kapitel lernen wir **Datenstrukturen** kennen die es uns ermöglichen **mehrere Werte** in einer einzelnen Variablen zu speichern und somit zusammengehörige Werte zusammenzufassen.
 
 Listen
 ======
 
-Eine Liste ist vom Typ `List<T>`, wobei `T` ein Platzhalter für den Typ der Elemente ist die die Liste aufnehmen soll. Man spricht deshalb auch von `List<T>` als einem *generischen* Typ. 
+Eine Liste ist vom Typ `List<T>`, wobei `T` ein Platzhalter für den Typ der Elemente ist die die Liste aufnehmen soll. Man spricht deshalb auch von `List<T>` als einem *generischen* Typ. Man kann sich diesen Syntax merken, indem man an eine Tasse Tee denkt :). 
 
-Wir können eine leere Liste mit Strings wie folgt definieren und initialisieren:
+Wir können eine leere Liste mit Strings wie folgt deklarieren und initialisieren:
 
 ```cs
 List<string> namen = new List<string>();
@@ -47,7 +47,9 @@ Console.WriteLine(namen[1]); // Alice
 Console.WriteLine(namen[2]); // Bob
 ```
 
-Analog hierzu kann ein Element gesetzt werden:
+Es ist zu beachten dass das erste Element nicht den Index `1`, sondern den Index `0` hat.
+
+Mit dem gleichen Syntax auch ein Wert gesetzt werden:
 
 ```cs
 namen[1] = "Carol";
@@ -82,14 +84,71 @@ Eine vollständige Übersicht über alle Konstruktoren, Eigenschaften, und Metho
 Arrays
 ======
 
+Arrays bieten ähnliche Funktionalitäten wie Listen, sind etwas performanter aber dafür weniger flexibel. Der Grund hierfür ist dass ein Array eine **feste** Anzahl Elemente beinhaltet.
+
+Wenn wir ein Array definieren, müssen wir also direkt die Anzahl an Elementen spezifizieren:
+
+```cs
+string[] namen = new string[3];
+```
+
+Analog zu Listen können wir Elemente mit einem Index setzen:
+
+```cs
+namen[0] = "Kevin";
+namen[1] = "Alice";
+namen[2] = "Bob";
+```
+
+Die Deklaration und Initialisierung kann wiederum auch in einer Zeile erfolgen:
+
+```cs
+string[] namen = new string[] { "Kevin", "Alice", "Bob" };
+```
+
+Anstelle der `Count` Eigenschaft gibt es bei Arrays die `Length` Eigenschaft:
+
+```cs
+int anzahlNamen = namen.Length;
+```
+
+Aufgrund der festen Länge haben Arrays weniger Methoden als Listen, es gibt zum Beispiel keine `Add` oder `Remove` Methode.
+
+
+Array mit Standardwerten
+------------------------
+
+Ein Array das nicht explizit mit Werten initialisiert wird, enthält automatisch für jedes Element den Standardwert. Beispielsweise enthält das Array
+
+```cs
+int[] zahlen = new int[5];
+```
+
+fünfmal den Wert `0`. Der Standardwert für Klassenobjekte ist ein spezieller Wert, nämlich `null` (dazu später mehr):
+
+```cs
+string[] namen = new string[3]; // {null, null, null}
+```
+
+Mehrdimensionale Arrays
+-----------------------
+
+Arrays bieten die Möglichkeit Werte in mehreren Dimensionen abzuspeichern. Ein zweidimensionales Array kann man sich beispielsweise als Tabelle oder Gitter vorstellen.
+
+Um beispielsweise ein TicTacToe Spielbrett zu modellieren ist ein zweidimensionales Array sehr gut geeignet:
+
+```cs
+string[,] spielbrett = new string[3, 3];
+spielbrett[0, 2] = "Kreuz"; // Setze ein Kreuz in Zeile 0, Spalte 2.
+spielbrett[1, 1] = "Kreis"; // Setze einen Kreis in die Mitte des Bretts.
+```
+
+Wie du siehst werden bei solch einem Array die Dimensionen einfach durch ein Komma abgetrennt.
+
 ---
 
+> Du hast die Grundlagen von Listen und Arrays verinnerlicht, spitzenmäßig! Diese Datenstrukturen wirst du beim Programmieren sehr häufig benötigen. Verwende ein Array wenn die Elementanzahl von vornherein bekannt ist und sich nicht verändert. Andernfalls verwende eine Liste. 
 
 
-Iterieren mit foreach
-
-
-LINQ
-=====
-
+---
 ### [Kursinhalt](../README.md)
