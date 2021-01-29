@@ -66,7 +66,7 @@ bool namenSindGleich = name1 == name2; // false
 bool namenSindUngleich = name1 != name2; // true
 ```
 
-Eine Übersicht über alle Funktionalitäten findest du in der [Dokumentation](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0).
+Eine Übersicht über alle Funktionalitäten findest du in der Dokumentation: https://docs.microsoft.com/en-us/dotnet/api/system.string.
 
 > Um zur Dokumentation für einen bestimmten Typ zu bekommen suche ich meistens bei der Suchmaschine meiner Wahl nach dem Schlüsselwort in Verbindung mit 'msdn' (Microsoft Developer Network). Also zum Beispiel suche ich nach "string msdn". Die gewünschte Dokumentation ist dann meistens der erste Treffer.
 

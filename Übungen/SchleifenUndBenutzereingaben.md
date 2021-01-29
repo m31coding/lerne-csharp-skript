@@ -29,6 +29,68 @@ for (int i = 10; i >= 0; i--)
 ```
 </details>
 
+Passwortabfrage
+-----------------
+
+Schreibe eine Methode `static void FragePasswortAb()` welche den Benutzer dazu auffordert ein Passwort einzugeben. Überprüfe ob das eingegebene Passwort "1234" lautet. Teile dem Benutzer mit ob das eingegebene Passwort korrekt ist. Falls es falsch ist, fordere ihn dazu auf es erneut einzugeben.
+
+<details>
+  <summary><b>Hinweis</b></summary>
+
+  - Verwende eine `while(true)`-Schleife.
+  - Verwende die Methode `Console.ReadLine()`.
+</details>
+
+<details>
+    <summary><b>Teillösung</b></summary>
+
+```cs
+static void FragePasswortAb()
+{
+    while(true)
+    {
+        Console.WriteLine("Wie lautet das Passwort?");
+
+        string eingabe = Console.ReadLine();
+        
+        // Überprüfe die Eingabe.
+    } 
+}
+```
+</details>
+
+<details>
+  <summary><b>Hinweis</b></summary>
+
+  - Verwende `if-else`.
+  - Beende die Schleife im Erfolgsfall.
+</details>
+
+<details>
+    <summary><b>Lösung</b></summary>
+
+```cs
+static void FragePasswortAb()
+{
+    while(true)
+    {
+        Console.WriteLine("Wie lautet das Passwort?");
+
+        string eingabe = Console.ReadLine();
+        if(eingabe == "1234")
+        {
+            Console.WriteLine("Korrekt!");
+            break;
+        }
+        else
+        {
+            Console.WriteLine("Falsches Passwort!");
+        }
+    } 
+}
+```
+</details>
+
 Fakultät
 --------
 
@@ -116,69 +178,6 @@ static int BerechneFakultät(int n)
     }
 }
 
-```
-</details>
-
-
-Passwortabfrage
------------------
-
-Schreibe eine Methode `static void FragePasswortAb()` welche den Benutzer dazu auffordert ein Passwort einzugeben. Überprüfe ob das eingegebene Passwort "1234" lautet. Teile dem Benutzer mit ob das eingegebene Passwort korrekt ist. Falls es falsch ist, fordere ihn dazu auf es erneut einzugeben.
-
-<details>
-  <summary><b>Hinweis</b></summary>
-
-  - Verwende eine `while(true)`-Schleife.
-  - Verwende die Methode `Console.ReadLine()`.
-</details>
-
-<details>
-    <summary><b>Teillösung</b></summary>
-
-```cs
-static void FragePasswortAb()
-{
-    while(true)
-    {
-        Console.WriteLine("Wie lautet das Passwort?");
-
-        string eingabe = Console.ReadLine();
-        
-        // Überprüfe die Eingabe.
-    } 
-}
-```
-</details>
-
-<details>
-  <summary><b>Hinweis</b></summary>
-
-  - Verwende `if-else`.
-  - Beende die Schleife im Erfolgsfall.
-</details>
-
-<details>
-    <summary><b>Lösung</b></summary>
-
-```cs
-static void FragePasswortAb()
-{
-    while(true)
-    {
-        Console.WriteLine("Wie lautet das Passwort?");
-
-        string eingabe = Console.ReadLine();
-        if(eingabe == "1234")
-        {
-            Console.WriteLine("Korrekt!");
-            break;
-        }
-        else
-        {
-            Console.WriteLine("Falsches Passwort!");
-        }
-    } 
-}
 ```
 </details>
 

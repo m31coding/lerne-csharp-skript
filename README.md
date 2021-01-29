@@ -5,6 +5,7 @@ Das Skript zum Programmierkurs.
 ## Kursinhalt
 
 - [Kursübersicht](Kapitel/Kursübersicht.md)
+---
 - [C# und Hallo Welt](Kapitel/CSharpUndHalloWelt.md)
 - [Variablen](Kapitel/Variablen.md)
 - [**Übungen**: Variablen](Übungen/Variablen.md)
@@ -22,6 +23,8 @@ Das Skript zum Programmierkurs.
 - [Benutzereingaben](Kapitel/Benutzereingaben.md)
 - [**Übungen**: Schleifen und Benutzereingaben](Übungen/SchleifenUndBenutzereingaben.md)
 - [**Abschlussübungen**: Zahlenzauber](Übungen/Zahlenzauber.md)
+---
+- [Listen und Arrays](Kapitel/ListenUndArrays.md)
 
 ## Ressourcen
 
