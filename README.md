@@ -25,6 +25,9 @@ Das Skript zum Programmierkurs.
 - [**Abschlussübungen**: Zahlenzauber](Übungen/Zahlenzauber.md)
 ---
 - [Listen und Arrays](Kapitel/ListenUndArrays.md)
+- [**Quiz**: Listen und Arrays](https://forms.gle/fA6qGSgwzzb97wBUA)
+- [IEnumerable Schnittstelle und LINQ](Kapitel/IenumerableUndLINQ)
+- [**Übungen**: TicTacToe KIs](Übungen/TicTacToeKIs.md)
 
 ## Ressourcen
 
