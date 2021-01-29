@@ -3,6 +3,27 @@
 Übung: TicTacToe KIs
 =====================
 
+In dieser Übung wollen wir mehrere KIs für TicTacToe schreiben. Für jede KI erstellt ihr am besten im Ordner *Spieler* eine neue Datei.
+Dies erreicht ihr wir folgt: Rechtsklick auf den Order -> Hinzufügen -> Neues Element. Dort wählt ihr Klasse aus und nennt die Datei der KI entsprechend, zum Beispiel MisterBoring.cs. 
+
+Außerdem soll jede KI die Schnittstelle `ISpieler` implementieren. Die Klasse `MisterBoring` soll also die folgende Struktur haben.:
+
+```cs
+using System;
+using TicTacToe.Spiel;
+
+namespace TicTacToe.Spieler
+{
+    public class MisterBoring2 : ISpieler
+    {
+        public Spielzug BerechneNächstenSpielzug(Spielstellung stellung)
+        {
+            throw new NotImplementedException(); // todo
+        }
+    }
+}
+````
+
 MisterBoring
 -------------
 
