@@ -7,7 +7,7 @@
 Zahlen rückwärts
 -----------------
 
-Schreibe eine for Schleife, die die Zahlen von 10 bis 0 (in absteigender Reihenfolge) auf der Konsole ausgibt
+Schreibe eine Methode `static void ZähleRückwärts()` die die Zahlen von 10 bis 0 (in absteigender Reihenfolge) mittels einer Schleife auf der Konsole ausgibt
 
 <details><summary><b>Hinweis 1</b></summary>
 
@@ -22,9 +22,12 @@ Schreibe eine for Schleife, die die Zahlen von 10 bis 0 (in absteigender Reihenf
 <details><summary><b>Lösung</b></summary>
 
 ```cs
-for (int i = 10; i >= 0; i--)
+static void ZähleRückwärts()
 {
-    Console.WriteLine(i);
+    for (int i = 10; i >= 0; i--)
+    {
+        Console.WriteLine(i);
+    }
 }
 ```
 </details>
@@ -32,7 +35,22 @@ for (int i = 10; i >= 0; i--)
 Passwortabfrage
 -----------------
 
-Schreibe eine Methode `static void FragePasswortAb()` welche den Benutzer dazu auffordert ein Passwort einzugeben. Überprüfe ob das eingegebene Passwort "1234" lautet. Teile dem Benutzer mit ob das eingegebene Passwort korrekt ist. Falls es falsch ist, fordere ihn dazu auf es erneut einzugeben.
+Schreibe eine Methode `static void FragePasswortAb()` welche den Benutzer dazu auffordert ein Passwort einzugeben. Überprüfe ob das eingegebene Passwort "ninja" lautet. Teile dem Benutzer mit ob das eingegebene Passwort korrekt ist. Falls es falsch ist, fordere ihn dazu auf es erneut einzugeben.
+
+Die Ausgabe könnte wie folgt aussehen:
+
+
+```sh
+Wie lautet das Passwort?
+1234
+Falsches Passwort!
+Wie lautet das Passwort?
+qwer
+Falsches Passwort!
+Wie lautet das Passwort?
+ninja
+Korrekt!
+```
 
 <details>
   <summary><b>Hinweis</b></summary>
@@ -77,7 +95,8 @@ static void FragePasswortAb()
         Console.WriteLine("Wie lautet das Passwort?");
 
         string eingabe = Console.ReadLine();
-        if(eingabe == "1234")
+
+        if(eingabe == "ninja")
         {
             Console.WriteLine("Korrekt!");
             break;
@@ -201,7 +220,7 @@ static void FragePasswortAb()
     Console.WriteLine("Wie lautet das Passwort?");
 
     string eingabe = Console.ReadLine();
-    if (eingabe == "1234")
+    if (eingabe == "ninja")
     {
         Console.WriteLine("Korrekt!");
     }

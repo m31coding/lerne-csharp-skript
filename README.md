@@ -27,6 +27,7 @@ Das Skript zum Programmierkurs.
 - [Listen und Arrays](Kapitel/ListenUndArrays.md)
 - [**Quiz**: Listen und Arrays](https://forms.gle/fA6qGSgwzzb97wBUA)
 - [IEnumerable Schnittstelle und LINQ](Kapitel/IenumerableUndLINQ.md)
+- [Benutzerdefinierte Typen: Enums, Klassen und Strukturen](Kapitel/BenutzerdefinierteTypen.md)
 - [**Übungen**: TicTacToe KIs](Übungen/TicTacToeKIs.md)
 
 ## Ressourcen

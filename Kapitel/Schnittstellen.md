@@ -1,6 +1,6 @@
 ### [Kursinhalt](../README.md)
 
-Interfaces
+Schnittstellen
 ==========
 
 
