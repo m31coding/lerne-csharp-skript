@@ -145,6 +145,8 @@ spielbrett[1, 1] = "Kreis"; // Setze einen Kreis in die Mitte des Bretts.
 
 Wie du siehst werden bei solch einem Array die Dimensionen einfach durch ein Komma abgetrennt.
 
+> Anmerkung: Wir verwenden für das TicTacToe Spielbrett ein Array mit einem selbst definierten Typ anstelle eines String-Arrays, dazu später mehr!
+
 ---
 
 > Du hast die Grundlagen von Listen und Arrays verinnerlicht, spitzenmäßig! Diese Datenstrukturen wirst du beim Programmieren sehr häufig benötigen. Verwende ein Array wenn die Elementanzahl von vornherein bekannt ist und sich nicht verändert. Andernfalls verwende eine Liste. 
