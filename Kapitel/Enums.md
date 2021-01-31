@@ -85,7 +85,7 @@ Außerdem ist der Code dadurch weniger fehleranfällig. Beispielsweise würde ei
 Interne Repräsentation
 ----------------------
 
-Intern werden Enum-Konstanten standardmäßig mit einem `int` gespeichert. Die erste Konstante hat hierbei den Wert `0`, die zweite den Wert `1`, u.s.w. Diese Werte können auch mit anderen Werten überschrieben werden, zum Beispiel um auch in der entsprechenden Zahl Bedeutung zu transportieren. Beispielsweise sieht ein Auszug aus der Definition von HttpStatusCode aus der .NET-Bibliothek wie folgt aus:
+Intern werden Enum-Konstanten standardmäßig mit einem `int` gespeichert. Die erste Konstante hat hierbei den Wert `0`, die zweite den Wert `1`, u.s.w. Diese Werte können auch mit anderen Werten überschrieben werden, zum Beispiel um auch in der entsprechenden Zahl Bedeutung zu transportieren. Hier ist ein Auszug aus der Definition von HttpStatusCode aus der .NET-Bibliothek:
 
 ```cs
 public enum HttpStatusCode
