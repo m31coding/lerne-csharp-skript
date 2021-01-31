@@ -71,9 +71,7 @@ Allerdings hat dies eine schwächere Semantik da man in einen String jeden belie
 string spielstand = "2:1";
 ```
 
-Dies würde natürlich den Sinn unserer Definition völlig verfehlen.
-
-Durch die Beschränkung auf einzelne Konstanten ist die Bedeutung unseres Enum Typs hingegen klar definiert.
+Dies würde natürlich den Sinn unserer Definition völlig verfehlen. Durch die Beschränkung auf einzelne Konstanten ist die Bedeutung unseres Enum Typs hingegen klar definiert.
 
 Außerdem ist der Code dadurch weniger fehleranfällig. Beispielsweise würde ein Tippfehler in der while Bedingung zu einer Endlosschleife führen:
 
