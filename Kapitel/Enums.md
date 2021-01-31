@@ -100,11 +100,11 @@ public enum HttpStatusCode
     InternalServerError = 500,
     BadGateway = 502,
     ServiceUnavailable = 503
-    // ... unvollständig
+    // ... und viele mehr
 }
 ```
 
-Wie man sieht kann die gleiche Zahl sogar zweimal vergeben werden. Das heißt `Moved` und `MovedPermanently` sind genauso Synonyme wie `Found` und `Redirect`. 
+Wie man sieht kann die gleiche Zahl sogar zweimal vergeben werden. Das heißt `Moved` und `MovedPermanently` sind genauso Synonyme füreinander wie `Found` und `Redirect`. 
 
 Eine Enum-Konstante kann explizit in den entsprechenden int-Wert konvertiert werden:
 
@@ -119,7 +119,7 @@ Die Konsolenausgabe wäre dann zum Beispiel:
 Status = 404: NotFound.
 ```
 
-Auch wenn wir die int-Werte für die Konstanten nicht selbst explizit setzen ist es gut ein Bewusstsein dafür zu haben. Mit dieser Definition des Symbol-Enums
+Auch wenn wir die int-Werte für die Konstanten nicht selbst explizit setzen ist es gut ein Bewusstsein dafür zu haben. Mit dieser Definition des Symbol-Enums:
 
 ```cs
 public enum Symbol 
@@ -135,10 +135,6 @@ können wir nämlich sicher sein, dass es in der Initialisierung nur mit Symbol.
 ```cs
 Symbol[,] spielbrett = new Symbol[3, 3];
 ```
-
-
-
-
 
 ---
 ### [Kursinhalt](../README.md)
