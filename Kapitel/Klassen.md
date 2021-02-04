@@ -189,16 +189,9 @@ using System;
 
 namespace Schachturnier
 {
-    public class SchachspielerV2
+    public class Schachspieler
     {
-        public string Vorname { get; }
-        public string Nachname { get; }
-        public string VollständigerName { get; }
-        public int Wertung { get; private set; }
-        public int Platzierung { get; set; }
-        public int PunkteänderungProSpiel { get; }
-
-        public SchachspielerV2(string vorname, string nachname)
+        public Schachspieler(string vorname, string nachname)
         {
             Vorname = vorname;
             Nachname = nachname;
@@ -207,6 +200,13 @@ namespace Schachturnier
             Platzierung = 0;
             PunkteänderungProSpiel = 10;
         }
+
+        public string Vorname { get; }
+        public string Nachname { get; }
+        public string VollständigerName { get; }
+        public int Wertung { get; private set; }
+        public int Platzierung { get; set; }
+        public int PunkteänderungProSpiel { get; }
 
         public void VerzeichneSieg()
         {
@@ -219,9 +219,190 @@ namespace Schachturnier
         }
     }
 }
-```cs
+```
 
-Das ist schon viel besser als die erste Version!
+Das ist schon viel besser als die erste Version! Nun kann nur noch die Eigenschaft `Platzierung` von außen gesetzt werden. 
+
+>Lass dich nicht verwirren dass die Properties im Gegensatz zu den Feldern unter den Konstruktor geschrieben werden, das ist einfach eine Konvention. Properties werden außerdem groß geschrieben, genauso wie Methoden. Lediglich private Felder sollten mit einem Kleinbuchstaben beginnen.
+
+Wir wollen im Folgenden noch ein paar kleine Verbesserungen in unserer Klasse vornehmen. Zunächst einmal wollen wir bei der Platzierung sicherstellen, dass keine negative Zahl oder die Null zugewiesen werden kann. Hierzu ändern wir die Autoproperty
+
+```cs
+public int Platzierung { get; set; }
+```
+
+in eine Gewöhnliche mit einem zugrundeliegenden privaten Feld und schreiben im `set`-Accessor die gewünschte Überprüfung:
+
+```cs
+private int platzierung;
+
+public int Platzierung
+{
+    get
+    {
+        return platzierung;
+    }
+    set
+    {
+        if (value <= 0)
+        {
+            string fehler = $"InvalidPlatzierung für Spiele{VollständigerName}: {value}";
+            throw new ArgumentException(fehler);
+        }
+        else
+        {
+            platzierung = value;
+        }
+    }
+}
+```
+
+Der `get`-Accessor kann hierbei durch einen **Ausdruckskörper** zu einer einzelnen Zeile vereinfacht werden:
+
+```cs
+get => platzierung;
+```
+
+Als nächstes nehmen wir die Eigenschaft `PunkteänderungProSpiel` unter die Lupe. Diese sollte für alle Spieler gleich sein! Mit anderen Worten, dieser Wert sollte nur einmal auf der Klasse existieren, und nicht auf jedem Objekt. Dies können wir durch das `static`-Schlüsselwort erreichen:
+
+```cs
+public static int PunkteänderungProSpiel {get;}
+```
+
+Nun macht es allerdings keinen Sinn mehr diesen Wert im Konstruktor zuzuweisen, schließlich soll der Wert für alle Instanzen der Selbe sein und auch nur einmal zugewiesen werden.
+
+Wir schreiben deshalb
+
+```cs
+public static int PunkteänderungProSpiel
+{
+    get
+    {
+        return 10;
+    }
+}
+```
+
+oder verkürzt mit einem Ausdruckskörper:
+
+```cs
+public static int PunkteänderungProSpiel => 10;
+```
+
+Zuletzt wollen wir noch die `VerzeichneSieg`-Methode etwas sprechender gestalten. Die `Max`-Methode sorgt dafür, dass die Wertung nie negativ werden kann.
+
+Dies können wir in einer extra Klassenmethode zum Ausdruck bringen:
+
+```cs
+public void VerzeichneSieg()
+{
+    Wertung = PositiveWertungOderNull(Wertung - PunkteänderungProSpiel);
+}
+
+private static int PositiveWertungOderNull(int wertung)
+{
+    return Math.Max(wertung, 0);
+}
+```
+
+Die Methode `PositiveWertungOderNull` bekommt von uns den `private`-Zugriffsmodifizierer, da wir nicht wollen dass sie von außen sichtbar und aufrufbar ist. Zusätzlich kennzeichnen wir sie als statisch (`static`), da diese unabhängig vom Zustand eines Schachspielerobjekts ist. Sie muss nicht auf Eigenschaften oder Methoden des Objekts zugreifen um ihre Ergebnis zu berechnen.
+
+Alternative können wir diese Methode auch als **Lokale Funktion** innerhalb der `VerzeichneSieg`-Methode definieren:
+
+```cs
+public void VerzeichneSieg()
+{
+    Wertung = PositiveWertungOderNull(Wertung PunkteänderungProSpiel)
+    
+    static int PositiveWertungOderNull(int wertung)
+    {
+        return Math.Max(wertung, 0);
+    }
+}
+```
+
+Dies ist möglich, da sie nur innerhalb der `VerzeichneSieg`-Methode aufgerufen wird. Aus der Methode `VerzeichneNiederlage` könnte sie beispielsweise nun nicht mehr aufgerufen werden.
+
+Unsere Klasse hat nun die folgende finale Gestalt und sieht ziemlich sauber aus (**Clean Code**):
+
+```cs
+using System;
+
+namespace Schachturnier
+{
+    public class Schachspieler
+    {
+        private int platzierung;
+
+        public Schachspieler(string vorname, string nachname)
+        {
+            Vorname = vorname;
+            Nachname = nachname;
+            VollständigerName = $"{vorname} {nachname}";
+            Wertung = 500;
+            platzierung = 0;
+        }
+
+        public string Vorname { get; }
+        public string Nachname { get; }
+        public string VollständigerName { get; }
+        public int Wertung { get; private set; }
+        public static int PunkteänderungProSpiel => 10;
+
+        public int Platzierung
+        {
+            get => platzierung;
+
+            set
+            {
+                if (value <= 0)
+                {
+                    string fehler = $"Invalide Platzierung für Spieler {VollständigerName}: {value}";
+                    throw new ArgumentException(fehler);
+                }
+                else
+                {
+                    platzierung = value;
+                }
+            }
+        }
+
+        public void VerzeichneSieg()
+        {
+            Wertung = PositiveWertungOderNull(Wertung - PunkteänderungProSpiel);
+
+            static int PositiveWertungOderNull(int wertung)
+            {
+                return Math.Max(wertung, 0);
+            }
+        }
+
+        public void VerzeichneNiederlage()
+        {
+            Wertung += PunkteänderungProSpiel;
+        }
+    }
+}
+
+```
+
+Kapselung und Zugriffsmodifizierer
+-----------------------------------
+
+Mit Klassen können wir Dinge und Probleme der realen Welt modellieren. Zustand und Verhalten von Objekten werden durch Eigenschaften und Methoden gebündelt. Dabei soll nach außen nur das Nötigste preisgegeben werden. In diesem Kontext spricht man auch von **Kapselung**. Für eine gute Kapselung brauchen wir die richtigen Zugriffsmodifizierer. Hier ist eine Übersicht über die wichtigsten Modifizierer:
+
+- `public`: Zugriff von überall aus möglich.
+- `private`: Zugriff nur von innerhalb der Klasse aus möglich.
+- `protected`: Zugriff möglich von innerhalb der Klasse oder innerhalb einer abgeleiteten Klasse (siehe Vererbung).
+- `internal`: Zugriff nur möglich von innerhalb der gleichen Assembly (dll oder exe). Das heißt bei einer Visual Studio Projektmappe nur innerhalb des selben Projekts.
+
+Vererbung
+----------
+
+Eine Klasse kann von einer anderen Klasse abgeleitet werden, um einen Teil des Modells dieser Klasse wiederzuverwenden (**Vererbung**). Vererbung ist ein fester Bestandteil der meisten objektorientierten Programmiersprachen, allerdings handelt es sich hierbei um ein kontroverses Thema. Oft kann nämlich ein besseres Modell durch eine Komposition erhalten werden anstelle von Vererbung, siehe auch "composition vs inheritance" bei der Suchmaschine deiner Wahl. Außerdem handelt es sich hierbei um fortgeschrittene Konzepte, die den Rahmen dieses Kurses sprengen würden.  
+
+---
+>In diesem Kapitel hast du gesehen, wie wir uns eine gute Klassendefinition Schritt für Schritt erarbeiten können. Das gut hinzubekommen ist alles andere als einfach! Es gibt ganze Bücher nur über diese Kunst (Domain-driven Design) und wie so oft macht Übung den Meister. Falls dir das alles noch sehr suspekt vorkommt, lass dich an dieser Stelle bitte nicht entmutigen, Klassen sind mit das Schwierigste was es in einer Sprache wie C# zu verstehen gibt! Im nächsten Kapitel werfen wir einen Blick auf Schnittstellen und betrachten weitere Beispielklassen.
 
 ---
 ### [Kursinhalt](../README.md) 

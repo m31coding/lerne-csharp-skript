@@ -33,6 +33,8 @@ Das Skript zum Programmierkurs.
 - [Strukturen](Kapitel/Strukturen.md)
 - [Referenz- und Wertetypen](Kapitel/todo.md)
 - [**Übungen**: TicTacToe KIs](Übungen/TicTacToeKIs.md)
+- [Der MinMax-Algorithmus](Kapitel/todo.md)
+- [**Abschlussübung**: Vier gewinnt KI](Übungen/TicTacToeKIs.md)
 
 ## Ressourcen
 
