@@ -91,6 +91,57 @@ Siegertyp
 Schreibe eine KI namens *Siegertyp*. Falls es einen Zug gibt der sofort zum Sieg führt wählt er diesen Zug aus. Andernfalls wählt er den ersten Zug aus der möglich ist.
 
 <details>
+<summary><b>Hinweis</b></summary>
+
+Führe alle möglichen Züge aus und teste mithilfe der Klasse `Stellungsanalyse` ob einer dieser Züge zum Sieg führt.
+</details>
+
+<details>
+<summary><b>Hinweis</b></summary>
+
+Bevor du einen Zug in deiner KI ausführst achte darauf dass du die Spielstellung kopierst. Dies ist wichtig, da ein Zug nicht mehr rückgängig gemacht werden kann.
+</details>
+
+<details>
+<summary><b>Teillösung</b></summary>
+
+```cs
+namespace TicTacToe.Spieler
+{
+    public class Siegertyp : ISpieler
+    {
+        public Spielzug BerechneNächstenSpielzug(Spielstellung stellung)
+        {
+            List<Spielzug> möglicheZüge = stellung.MöglicheZüge();
+            List<Spielzug> gewinnerZüge = 
+                möglicheZüge.Where(z => SpielzugGewinnt(z, stellung.Kopie())).ToList();
+
+            if(gewinnerZüge.Count > 0)
+            {
+                return gewinnerZüge[0];
+            }
+            else
+            {
+                return möglicheZüge[0];
+            }
+        }
+
+        private bool SpielzugGewinnt(Spielzug spielzug, Spielstellung stellung)
+        {
+            throw new NotImplementedException(); // todo
+        }
+    }
+}
+```
+</details>
+
+<details>
+<summary><b>Hinweis</b></summary>
+
+Speichere den Spieler am Zug bevor du den Spielzug ausführst. Verwende die Klasse `SpielstandKonvertierung` um einen Spielstand zur Siegerfarbe zu konvertieren.
+</details>
+
+<details>
 <summary><b>Lösung</b></summary>
 
 ```cs
