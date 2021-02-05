@@ -305,7 +305,7 @@ private static int PositiveWertungOderNull(int wertung)
 }
 ```
 
-Die Methode `PositiveWertungOderNull` bekommt von uns den `private`-Zugriffsmodifizierer, da wir nicht wollen dass sie von außen sichtbar und aufrufbar ist. Zusätzlich kennzeichnen wir sie als statisch (`static`), da diese unabhängig vom Zustand eines Schachspielerobjekts ist. Sie muss nicht auf Eigenschaften oder Methoden des Objekts zugreifen um ihre Ergebnis zu berechnen.
+Die Methode `PositiveWertungOderNull` bekommt von uns den `private`-Zugriffsmodifizierer, da wir nicht wollen dass sie von außen sichtbar und aufrufbar ist. Zusätzlich kennzeichnen wir sie als statisch (`static`), da diese unabhängig vom Zustand eines Schachspielerobjekts ist. Sie muss nicht auf Eigenschaften oder Methoden des Objekts zugreifen um ihr Ergebnis zu berechnen.
 
 Alternative können wir diese Methode auch als **Lokale Funktion** innerhalb der `VerzeichneSieg`-Methode definieren:
 
@@ -399,10 +399,10 @@ Mit Klassen können wir Dinge und Probleme der realen Welt modellieren. Zustand 
 Vererbung
 ----------
 
-Eine Klasse kann von einer anderen Klasse abgeleitet werden, um einen Teil des Modells dieser Klasse wiederzuverwenden (**Vererbung**). Vererbung ist ein fester Bestandteil der meisten objektorientierten Programmiersprachen, allerdings handelt es sich hierbei um ein kontroverses Thema. Oft kann nämlich ein besseres Modell durch eine Komposition erhalten werden anstelle von Vererbung, siehe auch "composition vs inheritance" bei der Suchmaschine deiner Wahl. Außerdem handelt es sich hierbei um fortgeschrittene Konzepte, die den Rahmen dieses Kurses sprengen würden.  
+Eine Klasse kann von einer anderen Klasse abgeleitet werden um einen Teil des Modells dieser Klasse wiederzuverwenden (**Vererbung**). Vererbung ist ein fester Bestandteil der meisten objektorientierten Programmiersprachen, allerdings handelt es sich hierbei um ein kontroverses Thema. Oft kann nämlich ein besseres Modell durch eine Komposition erhalten werden anstelle von Vererbung, siehe auch "composition vs inheritance" bei der Suchmaschine deiner Wahl. Außerdem handelt es sich hierbei um fortgeschrittene Konzepte, die den Rahmen dieses Kurses sprengen würden.  
 
 ---
->In diesem Kapitel hast du gesehen, wie wir uns eine gute Klassendefinition Schritt für Schritt erarbeiten können. Das gut hinzubekommen ist alles andere als einfach! Es gibt ganze Bücher nur über diese Kunst (Domain-driven Design) und wie so oft macht Übung den Meister. Falls dir das alles noch sehr suspekt vorkommt, lass dich an dieser Stelle bitte nicht entmutigen, Klassen sind mit das Schwierigste was es in einer Sprache wie C# zu verstehen gibt! Im nächsten Kapitel werfen wir einen Blick auf Schnittstellen und betrachten weitere Beispielklassen.
+>In diesem Kapitel hast du gesehen, wie wir uns eine gute Klassendefinition Schritt für Schritt erarbeiten können. Das gut hinzubekommen ist alles andere als einfach! Es gibt ganze Bücher nur über diese Kunst (Domain-driven Design) und wie so oft macht Übung den Meister. Falls dir das alles noch sehr suspekt vorkommt, lass dich an dieser Stelle bitte nicht entmutigen, Klassen sind nämlich mit das Schwierigste was es in einer Sprache wie C# zu verstehen gibt! Im nächsten Kapitel werfen wir einen Blick auf Schnittstellen und betrachten weitere Beispielklassen.
 
 ---
 ### [Kursinhalt](../README.md) 
