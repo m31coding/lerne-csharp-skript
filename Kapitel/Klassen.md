@@ -314,11 +314,11 @@ using System;
 
 namespace Schachturnier
 {
-    public class SchachspielerV3
+    public class Schachspieler
     {
         private int platzierung;
 
-        public SchachspielerV3(string vorname, string nachname)
+        public Schachspieler(string vorname, string nachname)
         {
             Vorname = vorname;
             Nachname = nachname;
@@ -330,7 +330,7 @@ namespace Schachturnier
         public string Vorname { get; }
         public string Nachname { get; }
         public string VollständigerName { get; }
-        internal int Wertung { get; private set; }
+        public int Wertung { get; private set; }
         public static int PunkteänderungProSpiel => 10;
 
         public int Platzierung
