@@ -168,8 +168,6 @@ Console.WriteLine(spieler1.Platzierung);
 
 hingegen wird die `get`-Methode aufgerufen, welche einfach den Wert des zugrundeliegenden Feldes zurückgibt. 
 
-wird `get` aufgerufen, was 
-
 Durch die Property haben wir eine zusätzliche Schicht eingebaut, mit der wir genau steuern können wie mit dem privaten Feld interagiert wird. Außerdem können wir mit dem Debugger Haltepunkte im `get`- und `set`-Accessor setzen um genau zu beobachten wann das zugrundeliegende Feld verändert wird. Dies kann äußerst nützlich sein um Fehler schnell zu finden.
 
 Soweit so gut. Allerdings ist der Code relativ lang in der Hinsicht, dass er nur dafür verantwortlich ist den Wert eines Feldes zu setzen und zurückzugeben. Deshalb gibt es sogenannte **Autoproperties**, die uns viel Schreibarbeit ersparen:
