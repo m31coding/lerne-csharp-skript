@@ -70,16 +70,15 @@ namespace Schachturnier
 
         public void VerzeichneSieg()
         {
-            Wertung = Math.Max(Wertung - PunkteänderungProSpiel, 0);
+            Wertung += PunkteänderungProSpiel;
         }
 
         public void VerzeichneNiederlage()
         {
-            Wertung += PunkteänderungProSpiel;
+            Wertung = Math.Max(Wertung - PunkteänderungProSpiel, 0);
         }
     }
 }
-
 ```
 
 Um eine Klasse zu definieren verwenden wir das `class`-Schlüsselwort, gefolgt vom Namen der Klasse und einem Codeblock `{}`. Als nächstes legen wir die Variablen an, die jedes Objekt der Klasse besitzen soll. Diese initialisieren wir in der `Schachspieler`-Konstruktormethode. Konstruktoren weisen in der Definition keinen Rückgabewert auf und müssen den selben Namen besitzen wie die Klasse selbst. Zuletzt definieren wir noch die beiden Methoden um Sieg- und Niederlage zu verzeichnen, beide ohne Rückgabewert. Wir haben außerdem alle Elemente der Klasse und die Klasse selbst mit dem Schlüsselwort `public` annotiert, hierzu gleich mehr.
@@ -91,6 +90,7 @@ Schachspieler spieler1 = new Schachspieler("Alice", "Queen");
 Schachspieler spieler2 = new Schachspieler("Bob", "Bishop");
 spieler1.VerzeichneSieg();
 spieler2.VerzeichneNiederlage();
+// Berechne Platzierungen ...
 spieler1.Platzierung = 1;
 spieler2.Platzierung = 2;
 Console.WriteLine($"{spieler1.VollständigerName} hat die Platzierung {spieler1.Platzierung} " +
@@ -131,7 +131,7 @@ Wie können wir dieses Verhalten nun am besten erreichen? Zunächst einmal sollt
 Für die Variable `Platzierung` können wir anstelle von 
 
 ```cs
-public string Platzierung;
+public int Platzierung;
 ```
 
 ein privates Feld und eine **Property** verwenden:
@@ -210,12 +210,12 @@ namespace Schachturnier
 
         public void VerzeichneSieg()
         {
-            Wertung = Math.Max(Wertung - PunkteänderungProSpiel, 0);
+            Wertung += PunkteänderungProSpiel;
         }
 
         public void VerzeichneNiederlage()
         {
-            Wertung += PunkteänderungProSpiel;
+            Wertung = Math.Max(Wertung - PunkteänderungProSpiel, 0);
         }
     }
 }
@@ -246,7 +246,7 @@ public int Platzierung
     {
         if (value <= 0)
         {
-            string fehler = $"InvalidPlatzierung für Spiele{VollständigerName}: {value}";
+            string fehler = $"Invalide Platzierung für Spieler {VollständigerName}: {value}";
             throw new ArgumentException(fehler);
         }
         else
@@ -307,22 +307,6 @@ private static int PositiveWertungOderNull(int wertung)
 
 Die Methode `PositiveWertungOderNull` bekommt von uns den `private`-Zugriffsmodifizierer, da wir nicht wollen dass sie von außen sichtbar und aufrufbar ist. Zusätzlich kennzeichnen wir sie als statisch (`static`), da diese unabhängig vom Zustand eines Schachspielerobjekts ist. Sie muss nicht auf Eigenschaften oder Methoden des Objekts zugreifen um ihr Ergebnis zu berechnen.
 
-Alternative können wir diese Methode auch als **Lokale Funktion** innerhalb der `VerzeichneSieg`-Methode definieren:
-
-```cs
-public void VerzeichneSieg()
-{
-    Wertung = PositiveWertungOderNull(Wertung PunkteänderungProSpiel)
-    
-    static int PositiveWertungOderNull(int wertung)
-    {
-        return Math.Max(wertung, 0);
-    }
-}
-```
-
-Dies ist möglich, da sie nur innerhalb der `VerzeichneSieg`-Methode aufgerufen wird. Aus der Methode `VerzeichneNiederlage` könnte sie beispielsweise nun nicht mehr aufgerufen werden.
-
 Unsere Klasse hat nun die folgende finale Gestalt und sieht ziemlich sauber aus (**Clean Code**):
 
 ```cs
@@ -330,11 +314,11 @@ using System;
 
 namespace Schachturnier
 {
-    public class Schachspieler
+    public class SchachspielerV3
     {
         private int platzierung;
 
-        public Schachspieler(string vorname, string nachname)
+        public SchachspielerV3(string vorname, string nachname)
         {
             Vorname = vorname;
             Nachname = nachname;
@@ -346,7 +330,7 @@ namespace Schachturnier
         public string Vorname { get; }
         public string Nachname { get; }
         public string VollständigerName { get; }
-        public int Wertung { get; private set; }
+        internal int Wertung { get; private set; }
         public static int PunkteänderungProSpiel => 10;
 
         public int Platzierung
@@ -369,21 +353,20 @@ namespace Schachturnier
 
         public void VerzeichneSieg()
         {
-            Wertung = PositiveWertungOderNull(Wertung - PunkteänderungProSpiel);
-
-            static int PositiveWertungOderNull(int wertung)
-            {
-                return Math.Max(wertung, 0);
-            }
+            Wertung += PunkteänderungProSpiel;
         }
 
         public void VerzeichneNiederlage()
         {
-            Wertung += PunkteänderungProSpiel;
+            Wertung = PositiveWertungOderNull(Wertung - PunkteänderungProSpiel);
+        }
+
+        private static int PositiveWertungOderNull(int wertung)
+        {
+            return Math.Max(wertung, 0);
         }
     }
 }
-
 ```
 
 Kapselung und Zugriffsmodifizierer
