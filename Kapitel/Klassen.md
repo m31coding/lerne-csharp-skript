@@ -94,7 +94,13 @@ spieler2.VerzeichneNiederlage();
 spieler1.Platzierung = 1;
 spieler2.Platzierung = 2;
 Console.WriteLine($"{spieler1.VollständigerName} hat die Platzierung {spieler1.Platzierung} " +
-                $"erreicht mit einer Wertung von {spieler1.Wertung}");
+                $"erreicht mit einer Wertung von {spieler1.Wertung}.");
+```
+
+Die entsprechende Konsolenausgabe ist dann: 
+
+```sh
+Alice Queen hat die Platzierung 1 erreicht mit einer Wertung von 510.
 ```
 
 Im Turnier würde man natürlich mit vielen Spielern mehrere Spiele spielen und die Platzierungen aus den Wertungen der Spieler berechnen. 
@@ -171,7 +177,7 @@ Soweit so gut. Allerdings ist der Code relativ lang in der Hinsicht, dass er nur
 public int Platzierung {get; set;}
 ```
 
-Durch diese Zeile wird beim kompilieren automatisch ein privates Feld im Hintergrund erzeugt, sowie `get`- und `set`-Accessors mit dem Standardverhalten. 
+Durch diese Zeile wird beim kompilieren automatisch ein privates Feld im Hintergrund erzeugt, sowie `get`- und `set`-Methoden mit dem Standardverhalten. 
 
 Mit Autoproperties können wir somit auch für die anderen Eigenschaften die gewünschten Zugriffsrechte auf einfache Weise spezifizieren: 
 
