@@ -128,13 +128,13 @@ Die Eigenschaften Vorname, Nachname und der vollständige Name sollten öffentli
 
 Wie können wir dieses Verhalten nun am besten erreichen? Zunächst einmal sollten immer alle Felder (Variablen von Klassen) privat gemacht werden, und der Zugriff nur über sogenannte **Properties** ermöglicht werden.
 
-Für die Variable `Platzierung` können wir anstelle von 
+Anstelle des öffentlichen Feldes `Platzierung`
 
 ```cs
 public int Platzierung;
 ```
 
-ein privates Feld und eine **Property** verwenden:
+können wir ein privates Feld `platzierung` und eine öffentliche **Property** `Platzierung` verwenden:
 
 ```cs
 private int platzierung;
@@ -152,21 +152,16 @@ public int Platzierung
 }
 ```
 
-Die Property definiert einen Lesezugriff durch das Schlüsselwort `get`, und einen schreibenden Zugriff durch das Schlüsselwort `set`. Man spricht hierbei auch von einem `get`-Accessor und einem `set`-Accessor. Das `value`-Schlüsselwort wird verwendet um auf den Wert zuzugreifen, der von außen zugewiesen wird. Durch den Befehl
+Die Property hat eine `get`-Methode für den Lesezugriff und eine `set`-Methode für den schreibenden Zugriff. Man spricht hierbei auch von einem `get`-Accessor und einem `set`-Accessor. Das `value`-Schlüsselwort wird verwendet um auf den Wert zuzugreifen, der von außen zugewiesen wird. 
+
+Betrachten wir als Beispiel die folgenden beiden Befehle:
 
 ```cs
 spieler1.Platzierung = 1;
-```
-
-wird also die `set`-Methode aufgerufen mit `value=1`.
-
-Durch 
-
-```cs
 Console.WriteLine(spieler1.Platzierung);
 ```
 
-hingegen wird die `get`-Methode aufgerufen, welche einfach den Wert des zugrundeliegenden Feldes zurückgibt. 
+In der ersten Zeile wird die `set`-Methode aufgerufen mit `value=1`. Der zweite Befehl ruft hingegen die `get`-Methode auf, welche einfach den Wert des zugrundeliegenden Feldes zurückgibt. 
 
 Durch die Property haben wir eine zusätzliche Schicht eingebaut, mit der wir genau steuern können wie mit dem privaten Feld interagiert wird. Außerdem können wir mit dem Debugger Haltepunkte im `get`- und `set`-Accessor setzen um genau zu beobachten wann das zugrundeliegende Feld verändert wird. Dies kann äußerst nützlich sein um Fehler schnell zu finden.
 
@@ -239,7 +234,7 @@ Wir wollen im Folgenden noch ein paar kleine Verbesserungen in unserer Klasse vo
 public int Platzierung { get; set; }
 ```
 
-in eine Gewöhnliche mit einem zugrundeliegenden privaten Feld und schreiben im `set`-Accessor die gewünschte Überprüfung:
+in eine Gewöhnliche mit einem zugrundeliegenden privaten Feld und schreiben in der `set`-Accessor die gewünschte Überprüfung:
 
 ```cs
 private int platzierung;
