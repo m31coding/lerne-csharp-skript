@@ -11,24 +11,31 @@ Ein Enum ist einer der einfachsten Datentypen in C#, hierbei handelt es sich led
 Für TicTacToe erweisen sich beispielsweise die folgenden beiden Enum-Definitionen als geschickt:
 
 ```cs
-public enum Symbol 
+namespace TicTacToe.Spiel
 {
-    Keins,
-    Kreuz,
-    Kreis
+    public enum Symbol 
+    {
+        Keins,
+        Kreuz,
+        Kreis
+    }
 }
 ```
 
 ```cs
-public enum Spielstand
+namespace TicTacToe.Spiel
 {
-    Offen,
-    Unentschieden,
-    KreuzIstSieger,
-    KreisIstSieger
+    public enum Spielstand
+    {
+        Offen,
+        Unentschieden,
+        KreuzIstSieger,
+        KreisIstSieger
+    }
 }
 ```
 
+Enums sollten genauso wie Klassen und Structs, die wir in den nächsten Kapiteln behandeln, in einer eigenen C#-Datei (.cs) definiert werden. Für das Enum `Symbol` legen wir beispielsweise die Datei Symbol.cs an, und für das Enum `Spielstand` die Datei Spielstand.cs.
 
 Wie verwendet man Enums?
 -------------------------
