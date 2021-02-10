@@ -22,7 +22,7 @@ namespace TicTacToe.Spieler
         }
     }
 }
-````
+```
 
 MisterBoring
 -------------
@@ -90,17 +90,17 @@ Siegertyp
 
 Schreibe eine KI namens *Siegertyp*. Falls es einen Zug gibt der sofort zum Sieg führt wählt er diesen Zug aus. Andernfalls wählt er den ersten Zug aus der möglich ist.
 
-<details>
-<summary><b>Hinweis</b></summary>
+### Allgemeine Hinweise 
 
-Führe alle möglichen Züge aus und teste mithilfe der Klasse `Stellungsanalyse` ob einer dieser Züge zum Sieg führt.
-</details>
+Bevor du einen Zug in deiner KI ausführst achte darauf dass du die Spielstellung mittels der `Kopie`-Methode kopierst.  Dies ist wichtig, da ein Zug nicht mehr rückgängig gemacht werden kann. 
 
-<details>
-<summary><b>Hinweis</b></summary>
+Verwende die Klasse `Stellungsanalyse` und `SpielstandKonvertierung` um zu überprüfen ob ein Zug nach Ausführung zum Sieg geführt hat.
 
-Bevor du einen Zug in deiner KI ausführst achte darauf dass du die Spielstellung kopierst. Dies ist wichtig, da ein Zug nicht mehr rückgängig gemacht werden kann.
-</details>
+### Los geht`s
+
+Lege zunächst eine Methode `private bool SpielzugGewinnt(Spielzug spielzug, Spielstellung stellung)` an ohne sie zu implementieren.
+ 
+Verwende diese Methode um `BerechneNächstenSpielzug` zu programmieren und tue einfach so, als hättest du die Methode `SpielzugGewinnt` schon fertig geschrieben (Top-Down Programmierung).
 
 <details>
 <summary><b>Teillösung</b></summary>
@@ -135,11 +135,7 @@ namespace TicTacToe.Spieler
 ```
 </details>
 
-<details>
-<summary><b>Hinweis</b></summary>
-
-Speichere den Spieler am Zug bevor du den Spielzug ausführst. Verwende die Klasse `SpielstandKonvertierung` um einen Spielstand zur Siegerfarbe zu konvertieren.
-</details>
+Programmiere die Methode `SpielzugGewinnt` fertig.
 
 <details>
 <summary><b>Lösung</b></summary>
