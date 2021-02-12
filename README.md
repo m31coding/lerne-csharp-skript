@@ -33,9 +33,8 @@ Kontakt: m31coding@gmail.com
 - [Klassen](Kapitel/Klassen.md)
 - [Schnittstellen](Kapitel/Schnittstellen.md)
 - [Strukturen](Kapitel/Strukturen.md)
-- [Referenz- und Wertetypen](Kapitel/todo.md)
 - [**Übungen**: TicTacToe KIs](Übungen/TicTacToeKIs.md)
-- [Der MinMax-Algorithmus](Kapitel/todo.md)
+- [Der MinMax-Algorithmus](Kapitel/MinMax.md)
 - [**Abschlussübung**: Vier gewinnt KI](Übungen/VierGewinntKI.md)
 
 ## Ressourcen
