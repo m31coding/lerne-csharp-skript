@@ -36,6 +36,7 @@ Kontakt: m31coding@gmail.com
 - [**Übungen**: TicTacToe KIs](Übungen/TicTacToeKIs.md)
 - [Der MinMax-Algorithmus](Kapitel/MinMax.md)
 - [**Abschlussübung**: Vier gewinnt KI](Übungen/VierGewinntKI.md)
+- [Schlusswort](Kapitel/Schlusswort.md)
 
 ## Ressourcen
 
