@@ -3,13 +3,13 @@
 Listen und Arrays
 ==================
 
-Bisher haben wir für jeden Wert den wir speichern wollten eine extra Variablen angelegt.
+Bisher haben wir für jeden Wert den wir speichern wollten eine extra Variable angelegt.
 In diesem Kapitel lernen wir **Datenstrukturen** kennen die es uns ermöglichen **mehrere Werte** in einer einzelnen Variablen zu speichern und somit zusammengehörige Werte zusammenzufassen.
 
 Listen
 ======
 
-Eine Liste ist vom Typ `List<T>`, wobei `T` ein Platzhalter für den Typ der Elemente ist die die Liste aufnehmen soll. Man spricht deshalb auch von `List<T>` als einem *generischen* Typ. Man kann sich diesen Syntax merken, indem man an eine Tasse Tee denkt :). 
+Eine Liste ist vom Typ `List<T>`, wobei `T` ein Platzhalter für den Typ der Elemente ist die die Liste aufnehmen soll. Man spricht deshalb auch von `List<T>` als einem *generischen* Typ. Man kann sich diesen Syntax merken, indem man bei `<T>` an eine Tasse Tee denkt, das `T` ist in der Tasse `<>` :).
 
 Wir können eine leere Liste mit Strings wie folgt deklarieren und initialisieren:
 
@@ -17,7 +17,7 @@ Wir können eine leere Liste mit Strings wie folgt deklarieren und initialisiere
 List<string> namen = new List<string>();
 ```
 
-Der Typ `List<T>` ist eine Klasse und um ein Listenobjekt zu erzeugen brauchen wir das `new` Schlüsselwort gefolgt vom Typ und runden Klammern. Dies stellt eine spezielle Methode dar um Objekte zu erstellen, sie wird *Konstruktor* genannt, dazu erfahren wir mehr im Kapitel über Klassen.
+Der Typ `List<T>` ist eine Klasse und um ein Listenobjekt zu erzeugen brauchen wir das `new` Schlüsselwort, gefolgt vom Typ und runden Klammern. Dies stellt eine spezielle Methode dar, um Objekte zu erstellen. Sie wird *Konstruktor* genannt und dazu erfahren wir mehr im Kapitel über Klassen.
 
 Wir können nun Elemente mittels der `Add` Methode hinzufügen;
 

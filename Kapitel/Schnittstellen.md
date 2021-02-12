@@ -55,7 +55,7 @@ namespace TicTacToe.Spieler
         public Spielzug BerechneNächstenSpielzug(Spielstellung stellung)
         {
             /*
-             * Wähle mithilfe des zahlengenerators einen 
+             * Wähle mithilfe des Zahlengenerators einen 
              * zufälligen Zug und gib diesen zurück.
              */ 
         }
@@ -169,7 +169,7 @@ namespace TicTacToe.Spieler
 }
 ```
 
-Wie du siehst hat sich nicht viel geändert, wir haben lediglich einen Doppelpunkt und den Namen der Schnittstelle hinter die Klassennamen geschrieben. Die größte Auswirkung dieser Änderung ist, dass beide Klassen nun eine Metdhode `Spielzug BerechneNächstenSpielzug(Spielstellung stellung)` haben *müssen*. Entfernt man diese Methode nun aus der Klasse meldete sich der Compiler mit einer Fehlermeldung.
+Wie du siehst hat sich nicht viel geändert, wir haben lediglich einen Doppelpunkt und den Namen der Schnittstelle hinter die Klassennamen geschrieben. Die größte Auswirkung dieser Änderung ist, dass beide Klassen nun eine Metdhode `Spielzug BerechneNächstenSpielzug(Spielstellung stellung)` haben *müssen*. Entfernte man diese Methode nun aus der Klasse, so würde sich der Compiler mit einer Fehlermeldung beschweren.
 
 Zu guter Letzt können wir die Problematik unserer `Partie`-Klasse auflösen. Anstelle einer konkreten Klasse übergeben wir ein Objekt des Schnittstellentyps `ISpieler`:
 
