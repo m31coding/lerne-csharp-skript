@@ -394,6 +394,7 @@ Vererbung
 Eine Klasse kann von einer anderen Klasse abgeleitet werden um einen Teil des Modells dieser Klasse wiederzuverwenden (**Vererbung**). Vererbung ist ein fester Bestandteil der meisten objektorientierten Programmiersprachen, allerdings handelt es sich hierbei um ein kontroverses Thema. Oft kann nämlich ein besseres Modell durch eine Komposition erhalten werden anstelle von Vererbung, siehe auch "composition vs inheritance" bei der Suchmaschine deiner Wahl. Außerdem handelt es sich hierbei um fortgeschrittene Konzepte, die den Rahmen dieses Kurses sprengen würden.  
 
 ---
+
 >In diesem Kapitel hast du gesehen, wie wir uns eine gute Klassendefinition Schritt für Schritt erarbeiten können. Das gut hinzubekommen ist alles andere als einfach! Es gibt ganze Bücher nur über diese Kunst (Domain-driven Design) und wie so oft macht Übung den Meister. Falls dir das alles noch sehr suspekt vorkommt, lass dich an dieser Stelle bitte nicht entmutigen, Klassen sind nämlich mit das Schwierigste was es in einer Sprache wie C# zu verstehen gibt! Im nächsten Kapitel werfen wir einen Blick auf Schnittstellen und betrachten weitere Beispielklassen.
 
 ---

@@ -2,12 +2,15 @@
 
 Das Skript zum Programmierkurs.
 
-Kontakt: m31coding@gmail.com
+- Autor: Kevin Schaal
+- Kontakt: m31coding@gmail.com
 
 ## Kursinhalt
 
 - [Kursübersicht](Kapitel/Kursübersicht.md)
+
 ---
+
 - [C# und Hallo Welt](Kapitel/CSharpUndHalloWelt.md)
 - [Variablen](Kapitel/Variablen.md)
 - [**Übungen**: Variablen](Übungen/Variablen.md)
@@ -25,7 +28,9 @@ Kontakt: m31coding@gmail.com
 - [Benutzereingaben](Kapitel/Benutzereingaben.md)
 - [**Übungen**: Schleifen und Benutzereingaben](Übungen/SchleifenUndBenutzereingaben.md)
 - [**Abschlussübungen**: Zahlenzauber](Übungen/Zahlenzauber.md)
+
 ---
+
 - [Listen und Arrays](Kapitel/ListenUndArrays.md)
 - [**Quiz**: Listen und Arrays](https://forms.gle/fA6qGSgwzzb97wBUA)
 - [IEnumerable Schnittstelle und LINQ](Kapitel/IEnumerableUndLINQ.md)

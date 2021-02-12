@@ -5,8 +5,8 @@ Datentypen
 
 In diesem Abschnitt diskutieren wir die Datentypen, die direkt in der Sprache integriert sind, diese werden auch integrierte Datentypen genannt.
 
- Primitive Datentypen
- --------------------
+Primitive Datentypen
+--------------------
 
 Die einfachsten und am häufigsten verwendeten Datentypen eines Programms sind **Zahlen**, **Zeichen**, und **Wahrheitswerte**. Die Typen für ganze Zahlen (integers) sind:
 
@@ -68,9 +68,9 @@ bool namenSindUngleich = name1 != name2; // true
 
 Eine Übersicht über alle Funktionalitäten findest du in der Dokumentation: https://docs.microsoft.com/en-us/dotnet/api/system.string.
 
-> Um zur Dokumentation für einen bestimmten Typ zu bekommen suche ich meistens bei der Suchmaschine meiner Wahl nach dem Schlüsselwort in Verbindung mit 'msdn' (Microsoft Developer Network). Also zum Beispiel suche ich nach "string msdn". Die gewünschte Dokumentation ist dann meistens der erste Treffer.
+>Um zur Dokumentation für einen bestimmten Typ zu bekommen suche ich meistens bei der Suchmaschine meiner Wahl nach dem Schlüsselwort in Verbindung mit 'msdn' (Microsoft Developer Network). Also zum Beispiel suche ich nach "string msdn". Die gewünschte Dokumentation ist dann meistens der erste Treffer.
 
-> Tipp: Um von der englischsprachigen zur deutschsprachigen Dokumentation zu wechseln, könnt ihr in der URL `en-us` durch `de-de` ersetzten. 
+>Tipp: Um von der englischsprachigen zur deutschsprachigen Dokumentation zu wechseln, könnt ihr in der URL `en-us` durch `de-de` ersetzten. 
 
 Weitere Typen
 --------------

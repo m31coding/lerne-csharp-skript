@@ -157,7 +157,7 @@ bool spielGehtWeiter = !spieler1HatGewonnen && !spieler2HatGewonnen;
 
 In diesem Beispiel ist die erste Formulierung meiner Meinung nach etwas besser lesbar.
 
-> Welche Form besser lesbar ist hängt sehr stark vom Einzelfall ab. Es lohnt sich beim Programmieren kurz innezuhalten und sich bewusst für eine der Formen zu entscheiden.
+>Welche Form besser lesbar ist hängt sehr stark vom Einzelfall ab. Es lohnt sich beim Programmieren kurz innezuhalten und sich bewusst für eine der Formen zu entscheiden.
 
 ---
 

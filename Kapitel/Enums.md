@@ -137,7 +137,7 @@ public enum Symbol
 }
 ```
 
-können wir nämlich sicher sein, dass es in der Initialisierung nur mit Symbol.Keins gefüllt wird:
+können wir nämlich sicher sein, dass es in der Initialisierung nur mit `Symbol.Keins` gefüllt wird:
 
 ```cs
 Symbol[,] spielbrett = new Symbol[3, 3];

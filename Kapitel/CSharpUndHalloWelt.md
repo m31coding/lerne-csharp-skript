@@ -83,7 +83,7 @@ Console.WriteLine("Herzlich willkommen zum Programmierkurs!");
 
 Geht mit Kommentaren sparsam um und achtet darauf dass sie sinnvoll sind. Der mehrzeilige Kommentar an dieser Stelle ist wenig sinnvoll, da die gesamte Information bereits in der darauffolgenden Codezeile enthalten ist.
 
-Erfahrene Programmierer können Code schreiben der auch ganz ohne Kommentare sehr sprechend ist und sich gut lesen lässt.
+>Erfahrene Programmierer können Code schreiben der auch ganz ohne Kommentare sehr sprechend ist und sich gut lesen lässt.
 
 ---
 

@@ -36,5 +36,6 @@ Beim Schach würde eine Heuristik natürlich ganz anders funktionieren. Hier sin
 
 Wie du siehst eröffnet sich für jedes Spiel eine neue Welt, obwohl der zugrundeliegende Algorithmus immer der Selbe ist. 
 
-### [Kursinhalt](../README.md)
 ---
+
+### [Kursinhalt](../README.md)

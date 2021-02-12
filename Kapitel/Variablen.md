@@ -32,7 +32,7 @@ Beim zweiten Befehl müssen wir nur den Namen der Variablen verwenden, da wir de
 
 Da das Programm alle Befehle Schritt für Schritt abarbeitet dürften die beiden Zeilen allerdings nicht vertauscht werden. Die Variable muss zuerst definiert werden bevor wir eine Zuweisung machen können.
 
-> Tipp: Falls der Wert der Variablen bereits während der Definition bekannt ist schreibe die Definition und Zuweisung am besten in eine Zeile.
+>Tipp: Falls der Wert der Variablen bereits während der Definition bekannt ist schreibe die Definition und Zuweisung am besten in eine Zeile.
 
 Änderung von Werten
 -------------------
@@ -65,6 +65,6 @@ Variablen sollten mit einem kleinen Buchstaben anfangen und zusammengeschrieben 
 ---
 
 
-> Perfekt!, mit diesem Wissen bist du sehr gut gerüstet für die weiteren Kapitel.
+>Perfekt!, mit diesem Wissen bist du sehr gut gerüstet für die weiteren Kapitel.
 
 ### [Kursinhalt](../README.md)

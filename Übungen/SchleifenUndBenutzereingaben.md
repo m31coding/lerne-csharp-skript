@@ -80,8 +80,8 @@ static void FragePasswortAb()
 <details>
   <summary><b>Hinweis</b></summary>
 
-  - Verwende `if-else`.
-  - Beende die Schleife im Erfolgsfall.
+- Verwende `if-else`.
+- Beende die Schleife im Erfolgsfall.
 </details>
 
 <details>

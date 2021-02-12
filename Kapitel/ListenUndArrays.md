@@ -79,7 +79,7 @@ Listen haben noch einige weitere nützliche Methoden, wie zum Beispiel `AddRange
 Eine vollständige Übersicht über alle Konstruktoren, Eigenschaften, und Methoden findet ihr in der MSDN Dokumentation: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.
 
 
-> Um Listen verwenden zu können benötigen wir einen Verweis auf den richtigen Namensraum. Diesen erhalten wir mit der Zeile `using System.Collections.Generic;`. Das müssen wir allerdings keinesfalls auswendig wissen, denn Visual Studio kann diese Zeile automatisch einfügen. Wenn du beispielsweise `List<string>` eintippst kannst du dir von Visual Studio mittels STRG+. vorschlagen lassen den richtigen Namensraum oben in die Codedatei einfügen zu lassen. Einmal mit der Eingabetaste bestätigen und schon ist die rote Schlangenlinie verschwunden.
+>Um Listen verwenden zu können benötigen wir einen Verweis auf den richtigen Namensraum. Diesen erhalten wir mit der Zeile `using System.Collections.Generic;`. Das müssen wir allerdings keinesfalls auswendig wissen, denn Visual Studio kann diese Zeile automatisch einfügen. Wenn du beispielsweise `List<string>` eintippst kannst du dir von Visual Studio mittels STRG+. vorschlagen lassen den richtigen Namensraum oben in die Codedatei einfügen zu lassen. Einmal mit der Eingabetaste bestätigen und schon ist die rote Schlangenlinie verschwunden.
 
 Arrays
 ======
@@ -145,11 +145,11 @@ spielbrett[1, 1] = "Kreis"; // Setze einen Kreis in die Mitte des Bretts.
 
 Wie du siehst werden bei solch einem Array die Dimensionen einfach durch ein Komma abgetrennt.
 
-> Anmerkung: Wir verwenden für das TicTacToe Spielbrett ein Array mit einem selbst definierten Typ anstelle eines String-Arrays, dazu später mehr!
+>Anmerkung: Wir verwenden für das TicTacToe Spielbrett ein Array mit einem selbst definierten Typ anstelle eines String-Arrays, dazu später mehr!
 
 ---
 
-> Du hast die Grundlagen von Listen und Arrays verinnerlicht, spitzenmäßig! Diese Datenstrukturen wirst du beim Programmieren sehr häufig benötigen. Verwende ein Array wenn du mehrere Dimensionen benötigst oder die Elementanzahl von vornherein bekannt ist und sich nicht verändert. Andernfalls verwende eine Liste. 
+>Du hast die Grundlagen von Listen und Arrays verinnerlicht, spitzenmäßig! Diese Datenstrukturen wirst du beim Programmieren sehr häufig benötigen. Verwende ein Array wenn du mehrere Dimensionen benötigst oder die Elementanzahl von vornherein bekannt ist und sich nicht verändert. Andernfalls verwende eine Liste. 
 
 ---
 ### [Kursinhalt](../README.md)

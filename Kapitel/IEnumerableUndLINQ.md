@@ -108,7 +108,7 @@ Andererseits wird in diesem Beispiel der Filter dreimal von neuem angewandt, sod
 
 ---
 
-> In diesem Kapitel hast du LINQ kennengelernt, eines der mächtigsten Features in C#. Es kann nicht nur für IEnumerables verwendet werden, man kann damit sogar auch Abfragen für Datenbanken und XML-Dokumente erstellen.
+>In diesem Kapitel hast du LINQ kennengelernt, eines der mächtigsten Features in C#. Es kann nicht nur für IEnumerables verwendet werden, man kann damit sogar auch Abfragen für Datenbanken und XML-Dokumente erstellen.
 
 ---
 ### [Kursinhalt](../README.md)

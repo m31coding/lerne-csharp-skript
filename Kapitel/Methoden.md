@@ -58,7 +58,7 @@ void Begrüßung(string name1, string name2)
 
 ```
 
-> Mit Methoden können wir unseren Code sehr sprechend gestalten, lege deshalb am besten großen Wert auf die Benennung deiner Methoden. Achte bitte außerdem darauf, dass Methoden im Gegensatz zu Variablen mit einem Großbuchstaben beginnen sollten. 
+>Mit Methoden können wir unseren Code sehr sprechend gestalten, lege deshalb am besten großen Wert auf die Benennung deiner Methoden. Achte bitte außerdem darauf, dass Methoden im Gegensatz zu Variablen mit einem Großbuchstaben beginnen sollten. 
 
 ---
 
