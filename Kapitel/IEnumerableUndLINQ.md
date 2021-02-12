@@ -3,7 +3,7 @@
 IEnumerable
 ============
 
-Listen und Arrays implementieren beide die **Schnittstelle** `IEnumerable<T>`. Das `I` steht hierbei für Interface, dem englischen Wort für Schnittstelle. Eine Schnittstelle definiert einen Vertrag der von den Typen die diese Schnittstelle implementieren eingehalten werden muss. Die Schnittstelle `IEnumerable<T>` definiert Methoden um über Elemente vom Typ `T` zu iterieren. Enumerable heißt nichts weiter als **Auflistung**.
+Listen und Arrays implementieren beide die **Schnittstelle** `IEnumerable<T>`. Das `I` steht hierbei für Interface, dem englischen Wort für Schnittstelle. Eine Schnittstelle definiert einen Vertrag, der von den Typen, die diese Schnittstelle implementieren, eingehalten werden muss. Die Schnittstelle `IEnumerable<T>` definiert Methoden um über Elemente vom Typ `T` zu iterieren. Enumerable heißt nichts weiter als **Auflistung**.
 
 Sowohl Listen als auch Arrays können implizit in den Schnittstellentyp konvertiert werden: 
 
@@ -48,7 +48,7 @@ zahlen.Skip(1) // 11, -4, 7
 zahlen.Skip(1).Take(2) // 11, -4
 ```
 
-Wie das letzte Beispiel zeigt sind die LINQ Methoden auch sehr gut für Verkettungen geeignet.
+Wie das letzte Beispiel zeigt, sind die LINQ Methoden auch sehr gut für Verkettungen geeignet.
 
 Einige Methoden nehmen eine Funktion als Argument entgegen, die sehr bequem durch einen sogenannten Lambdaausdruck definiert werden kann:
 
