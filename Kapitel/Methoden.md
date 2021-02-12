@@ -12,11 +12,11 @@ double BerechneQuadrat(double zahl)
 {
     return zahl * zahl;
 }
-
 ```
 
-Als erstes muss man den Rückgabewert spezifizieren, hier ist dieser ein `double`. Dann wählt und schreibt man einen aussagekräftigen Namen. Danach folgen Klammern,  welche **Parameter** beinhalten können. In unserem Beispiel möchten wir die Methode mit einem einzelnen Argument aufrufen und definieren den Parameter `double zahl`.
-Das `return` Schlüsselwort sorgt dafür, dass an dieser Stelle das Ergebnis der Berechnung von der Methode zurückgegeben wird.
+Als erstes muss man den Rückgabewert spezifizieren, hier ist dieser ein `double`. Dann wählt und schreibt man einen aussagekräftigen Namen. Danach folgen Klammern,  welche **Parameter** beinhalten können. In unserem Beispiel möchten wir die Methode mit einem einzelnen Argument aufrufen und definieren den Parameter `double zahl`. Das Verhalten der Methode wird innerhalb eines Codeblocks `{}` definiert, der in diesem Zusammenhang als **Methodenkörper** bezeichnet wird.
+
+Um von einer Methode einen Wert zurückzugeben muss man das `return`-Schlüsselwort verwenden. An dieser Stelle springt das Programm wieder aus der Methode heraus. 
 
 Wir können die Methode nun im Code wie folgt aufrufen: 
 
