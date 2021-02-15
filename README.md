@@ -1,5 +1,7 @@
 # Lerne Programmieren mit C# und künstlicher Intelligenz
 
+![Vier gewinnt](Kapitel/Bilder/vier_gewinnt.png)
+
 Das Skript zum Programmierkurs.
 
 - Autor: Kevin Schaal
