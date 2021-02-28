@@ -5,7 +5,7 @@ Schnittstellen
 
 Eine Schnittstelle ist ein Vertrag der von einer Klasse oder Struktur eingehalten werden muss. Schnittstellen dienen dazu Klassen und Strukturen die die gleichen Methoden- und Propertydeklarationen besitzen zusammenzufassen. 
 
-Betrachten wir beispielsweise ein TicTacToe-Programm bei dem es möglich sein soll dass verschiedene Spieler gegeneinander antreten können. Dies können sowohl KIs sein, als auch ein menschlicher Spieler der Eingaben über die Konsole macht. Letzteren modellieren wir durch eine Klasse mit dem Namen `Konsolenspieler`.
+Betrachten wir beispielsweise ein TicTacToe-Programm bei dem es möglich sein soll, dass verschiedene Spieler gegeneinander antreten können. Dies können sowohl KIs sein, als auch ein menschlicher Spieler der Eingaben über die Konsole macht. Letzteren modellieren wir durch eine Klasse mit dem Namen `Konsolenspieler`.
 
 Eine sehr einfache (aber auch sehr schwache) KI macht immer einen zufälligen Zug wenn sie an der Reihe ist. Wir wollen diese KI mittels einer Klasse `MissRandom` modellieren. 
 
