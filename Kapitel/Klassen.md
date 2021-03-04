@@ -8,7 +8,7 @@ Einführung
 
 Mit Klassen können wir Dinge und Probleme der realen Welt modellieren. Wir haben bereits unter anderem die Klasse `Console` kennengelernt, die die Konsole unseres Programms modelliert, die Klasse `Random`, deren Objekte Zahlengeneratoren darstellen, und die Klasse `Stopwatch` um Zeitmessungen durchzuführen. Je nachdem welches Anwendungsgebiet dein Programm hat wirst du verschiedene Klassen schreiben. Um Bankabläufe zu digitalisieren könnte man zum Beispiel die Klassen `Bankkonto`, `Kunde` und `Transaktion` definieren. Für ein VierGewinnt-Spiel eignen sich hingegen Klassen wie `Spielstellung`, `KonsolenSpieler`, `MinMaxKI` und `Partie`. Jede Klasse hat hierbei Eigenschaften und Methoden um Zustand und Verhalten zu modellieren.
 
-Bei Klassen unterscheidet man zwischen  **gewöhnlichen**, **nicht-statischen** Klassen, und **statischen** Klassen. Eine gewöhnliche Klasse ist ein Modell für ein Objekt und zugleich eine Schablone um konkrete Objekte zu erzeugen. Eine statische Klasse hingegen ist ein Modell und verkörpert gleichzeitig die modellierte Entität. Im Gegensatz zu einer gewöhnlichen Klasse können keine Objekte erzeugt werden.
+Bei Klassen unterscheidet man zwischen gewöhnlichen, **nicht-statischen** Klassen, und **statischen** Klassen. Eine gewöhnliche Klasse ist ein Modell für ein Objekt und zugleich eine Schablone um konkrete Objekte zu erzeugen. Eine statische Klasse hingegen ist ein Modell und verkörpert gleichzeitig die modellierte Entität. Im Gegensatz zu einer gewöhnlichen Klasse können keine Objekte erzeugt werden.
 
 Klassen verwenden
 ------------------
@@ -42,7 +42,7 @@ Klassen schreiben
 
 Nehmen wir einmal an, wir wollen Software für ein Schachturnier programmieren. Um eine Person die am Turnier teilnimmt zu modellieren definieren wir eine Klasse `Schachspieler`. Ein Schachspieler soll die Eigenschaften `Vorname`, `Nachname`, `VollständigerName`, `Wertung` und `Platzierung` haben. Außerdem soll jeder Spieler die Methoden `void VerzeichneSieg()` und `void VerzeichneNiederlage()` haben, die die Wertung ändern. Bei einem Sieg soll die Wertung um eine feste Punktzahl `PunkteänderungProSpiel` steigen, bei einer Niederlage fallen. Allerdings sollte die Wertung nie unter null fallen können.
 
-Eine erste Version der Klasse könnte wie folgt aussehen:
+Wir legen eine neue Datei namens *Schachspieler.cs* an und versuchen uns an einer ersten Implementierung. Diese könnte wie folgt aussehen:
 
 ```cs
 using System;

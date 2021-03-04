@@ -69,7 +69,7 @@ Außerdem ist jeder Typ entweder ein Werttyp, oder ein Referenztyp. Structs und 
 
 Die entscheidenden Unterschiede zwischen einem Werttyp und einem Referenztyp sind die Folgenden: Eine Variable eines Werttyps enthält den Wert direkt. In einer Variable eines Referenztyps hingegen wird eine Referenz (**Zeiger**) auf das eigentliche Objekt gespeichert.
 
-Betrachten wir eimal das folgende Beispiel:
+Betrachten wir einmal das folgende Beispiel:
 
 ```cs
 int zahl = 2;
@@ -111,7 +111,7 @@ Was geschieht hierbei mit dem Punkt `p1`? Wie in der Konsolenausgabe zu sehen is
 (0, 1)
 ```
 
-Der Knackpunkt ist dass bei der Zuweisung in der Zeile
+Der Knackpunkt ist, dass bei der Zuweisung in der Zeile
 
 ```cs
 Punkt p2 = p1;
@@ -149,7 +149,7 @@ Ein Struct eignet sich hervorragend wenn du einen **kompakten, datenorientierten
 
 Wenn du mit deinem Typ ein **Interface** implementieren möchtest, ist es in den allermeisten Fällen besser eine **Klasse** zu definieren. An den Stellen wo du das Struct als den Interfacetyp verwendest muss dieses dann in ein Referenzobjekt eingepackt werden was mit zusätzlichem Rechenaufwand verbunden ist. Siehe hierzu auch "C# boxing unboxing" bei der Suchmaschine deines Vertrauens. Wenn du hingegen **Vererbung** verwenden möchtest musst du dich zwangsläufig für eine Klasse entscheiden, da diese von Structs nicht unterstützt wird.
 
->Wenn du dir in manchen Fällen überhaupt nicht sicher bist ob ein Struct oder ein Klasse die bessere Wahl für einen Typ ist dann empfehle ich dir zunächst eine Klasse zu verwenden. Diese Wahl ermöglicht dir etwas mehr Flexibilität. Wenn dein Programm dann einmal läuft und zufriedenstellend funktioniert kannst du deine Entscheidung noch einmal überprüfen. Ändere hierzu deinen Typ von Klasse zu Struct und messen ob sich die Laufzeit und oder der Speicherverbrauch deines Programms reduzieren. Ist dies nicht der Fall, oder es zeigt sich nur eine sehr geringe Verbesserung, kannst du guten Gewissens eine Klasse verwenden.
+>Wenn du dir in manchen Fällen überhaupt nicht sicher bist ob ein Struct oder ein Klasse die bessere Wahl für einen Typ ist dann empfehle ich dir zunächst eine Klasse zu verwenden. Diese Wahl ermöglicht dir etwas mehr Flexibilität. Wenn dein Programm dann einmal läuft und zufriedenstellend funktioniert kannst du deine Entscheidung noch einmal überprüfen. Ändere hierzu deinen Typ von Klasse zu Struct und messe ob sich die Laufzeit und oder der Speicherverbrauch deines Programms dadurch reduziert hat. Ist dies nicht der Fall, oder es zeigt sich nur eine sehr geringe Verbesserung, kannst du guten Gewissens eine Klasse verwenden.
 
 ---
 ### [Kursinhalt](../README.md)

@@ -8,7 +8,7 @@ Begrüßungsmethode
 
 Schreibe in die Klasse `program` und unter die `main` Methode eine Methode `static void Begrüßung(string name)`. Rufe diese in der `main` Methode mit verschiedenen Namen auf. 
 
-Achte darauf dass du das `static` Schlüsselwort zu Beginn der Definition nicht vergisst. Was es damit auf sich hat werden wir zu einem späteren Zeitpunkt lernen. Der Knackpunkt ist dass man aus der statischen `main` Methode heraus nur andere statische Methoden direkt aufrufen kann.
+Achte darauf dass du das `static` Schlüsselwort zu Beginn der Definition nicht vergisst. Was es damit auf sich hat werden wir zu einem späteren Zeitpunkt lernen. Der Knackpunkt ist, dass man aus der statischen `main` Methode heraus nur andere statische Methoden direkt aufrufen kann.
 
 Ihr könnt den anderen Code den ihr bereits geschrieben habt einfach auskommentieren, beziehungsweise die Teile die ihr für die Methode braucht ausschneiden und in die Methode einfügen.
 
