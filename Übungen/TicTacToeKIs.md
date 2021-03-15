@@ -77,7 +77,7 @@ namespace TicTacToe.Spieler
         public Spielzug BerechneNächstenSpielzug(Spielstellung stellung)
         {
             List<Spielzug> spielzüge = stellung.MöglicheZüge();
-            int zufälligerZug = zahlengenerator.Next(0, spielzüge.Count);
+            int zufälligerZug = zahlengenerator.Next(spielzüge.Count);
             return spielzüge[zufälligerZug];
         }
     }
