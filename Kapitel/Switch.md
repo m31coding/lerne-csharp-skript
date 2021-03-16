@@ -3,7 +3,7 @@
 Verzweigungen mit switch
 ========================
 
-[>>Videolektion auf YouTube<<](https://youtu.be/Vdijo9Haamk)
+[**>>Videolektion auf YouTube<<**](https://youtu.be/Vdijo9Haamk)
 
 Der Code zum Video:
 
