@@ -14,7 +14,7 @@ Definition und Zuweisung
 Eine **Schublade** ist eine Metapher für eine **Variable**. Wir können eine Variable für den Text "Willkommen!" wie folgt anlegen:
 
 ```cs
-string begrüßung = "Willkommen!";
+string begrueßung = "Willkommen!";
 ```
 
 Zunächst muss der Typ der Variablen angegeben werden, in unserem Fall wollen wir eine Zeichenkette speichern. Wir wählen also den Typ `string`. Als nächstes überlegen wir uns einen aussagekräftigen Namen, zum Beispiel `begrüßung`. Durch das Gleichheitszeichen (Zuweisungsoperator) weisen wir der Variablen den Wert `"Willkommen!"` zu. Da es sich um einen Befehl handelt, müssen wir diesen außerdem mit dem Semikolon `;` abschließen.
