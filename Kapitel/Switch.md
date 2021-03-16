@@ -5,8 +5,6 @@ Verzweigungen mit switch
 
 [>>Videolektion auf YouTube<<](https://youtu.be/Vdijo9Haamk)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Vdijo9Haamk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Der Code zum Video:
 
 ```cs
