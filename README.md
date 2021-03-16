@@ -41,6 +41,8 @@ Das Skript zum Programmierkurs.
 - [Schnittstellen](Kapitel/Schnittstellen.md)
 - [Strukturen](Kapitel/Strukturen.md)
 - [**Übungen**: TicTacToe KIs](Übungen/TicTacToeKIs.md)
+- [**Video**: Verzweigungen mit switch](Kapitel/Switch.md)
+- [**Übungen**: switch](Übungen/Switch.md)
 - [Der MinMax-Algorithmus](Kapitel/MinMax.md)
 - [**Abschlussübung**: Vier gewinnt KI](Übungen/VierGewinntKI.md)
 
