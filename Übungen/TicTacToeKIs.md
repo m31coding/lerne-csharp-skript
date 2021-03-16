@@ -16,7 +16,7 @@ namespace TicTacToe.Spieler
 {
     public class MisterBoring : ISpieler
     {
-        public Spielzug BerechneNächstenSpielzug(Spielstellung stellung)
+        public Spielzug BerechneNaechstenSpielzug(Spielstellung stellung)
         {
             throw new NotImplementedException(); // todo
         }
