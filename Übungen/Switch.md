@@ -31,7 +31,7 @@ private static void VerkündeErgebnis(Spielstand spielstand)
 Diese können wir durch einen *switch*-Ausdruck umschreiben zu: 
 
 ```cs
-private static void VerkündeErgebnis2(Spielstand spielstand)
+private static void VerkündeErgebnis(Spielstand spielstand)
 {
     Console.WriteLine();
     Symbol sieger = SpielstandKonvertierung.NachSymbol(spielstand);
