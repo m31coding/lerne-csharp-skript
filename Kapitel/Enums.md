@@ -51,7 +51,7 @@ Spielstand spielstand = Spielstand.Offen;
  }
 ```
 
-Enums haben außerdem eine nützliche String-Repräsentation. Solange der Spielstand offen ist gibt der folgende Code "Der Spielstand ist Offen." aus:
+Enums haben außerdem eine nützliche String-Repräsentation. Solange der Spielstand offen ist, gibt der folgende Code "Der Spielstand ist Offen." aus:
 
 ```cs
 Console.WriteLine($"Der Spielstand ist: {spielstand}."); 
