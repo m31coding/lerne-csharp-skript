@@ -58,8 +58,9 @@ Console.WriteLine(begrüßung.Contains("Willkommen")); // true
 Console.WriteLine(begrüßung.ToLower()); // herzlich willkommen zum programmierkurs!
 ```
 
-`Length` ist hierbei eine Eigenschaft (Property), `Contains`, und `ToLower` hingegen sind Methoden und müssen mit Runden Klammern `()` aufgerufen werden. Viele Methoden nehmen Argumente entgegen, die `Contains`-Methode beispielsweise erwartet einen `string` auf den geprüft werden soll. 
+`Length` ist hierbei eine Eigenschaft (Property), `Contains`, und `ToLower` hingegen sind Methoden und müssen mit Runden Klammern `()` aufgerufen werden. Viele Methoden nehmen Argumente entgegen, beispielsweise erwartet die `Contains`-Methode einen `string` auf den geprüft werden soll. 
 
+>Wir behandeln Methoden ausführlich in einem späteren Kapitel, falls dir die obigen Zeilen also noch etwas spanisch vorkommen ist das an dieser Stelle kein Beinbruch :)
 
 Äußerst nützlich ist außerdem die Stringinterpolation `$`, welche es uns erlaubt Variablen wie folgt in einen string einzusetzen:
 
