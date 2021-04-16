@@ -7,6 +7,8 @@ Das Skript zum Programmierkurs.
 - Autor: Kevin Schaal
 - Kontakt: m31coding@gmail.com
 
+Willkommen! Bevor wir loslegen können bitte ich dich die Programmierumgebung Visual Studio zu installieren. [Hier](https://drive.google.com/file/d/1C7uPneaSY-G-ixkI0P9qwUq4knBhn4Pv/view?usp=sharing) findest du eine Anleitung.
+
 ## Kursinhalt
 
 - [Kursübersicht](Kapitel/Kursübersicht.md)

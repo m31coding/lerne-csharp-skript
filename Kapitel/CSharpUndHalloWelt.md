@@ -6,7 +6,7 @@ C# und Hallo Welt
 Sprache und Programm
 ---------------------
 
-C# ist eine moderne Sprache dies sich immer größerer Beliebtheit erfreut: [https://octoverse.github.com/](https://octoverse.github.com/). Ein großer Vorteil der Sprache ist dass sie **sehr flexibel** einsetzbar ist. Man kann sowohl Programme für Windows, Linux und Mac entwickeln, als auch Mobile-Apps für Android und iOS. Außerdem stellt Microsoft mit **Visual Studio** eine der besten Entwicklungsumgebungen zur Verfügung sodass man mit C# äußerst produktiv entwickeln kann. 
+C# ist eine moderne Sprache die sich immer größerer Beliebtheit erfreut: [https://octoverse.github.com/](https://octoverse.github.com/). Ein großer Vorteil der Sprache ist dass sie **sehr flexibel** einsetzbar ist. Man kann sowohl Programme für Windows, Linux und Mac entwickeln, als auch Mobile-Apps für Android und iOS. Außerdem stellt Microsoft mit **Visual Studio** eine der besten Entwicklungsumgebungen zur Verfügung sodass man mit C# äußerst produktiv entwickeln kann. 
 
 Wir können mithilfe einer Programmiersprache wie C# ein Programm schreiben welches vom Computer ausgeführt werden kann. Analog zu einer Fremdsprache muss man in einer Programmiersprache Vokabeln und Grammatik lernen und einen **korrekten Syntax** einhalten. Dies ist bei Programmiersprachen noch wichtiger als bei einer Fremdsprache, denn ein einzelnes falsches Zeichen kann dazu führen dass der Computer das Programm nicht versteht.
 
