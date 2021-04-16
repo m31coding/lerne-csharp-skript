@@ -3,6 +3,17 @@
 Übungen zu Zahlentypen und Operatoren
 ===================================
 
+
+Projekt anlegen
+---------------
+
+Für diese Übung wollen wir ein neues Projekt anlegen. Mache im Projektmappen-Explorer auf der rechten Seite einen rechtsklick auf die Projektmappe *Programmierkurs*. Dann wählst du  *Hinzufügen* -> *Neues Projekt* aus. Wähle als Typ Konsolen-App (.NET Core) und klicke auf weiter. Gib dem Projekt den Namen *Zahlen* und klicke auf *Erstellen*. Nun sollte das Projekt im Projektmappen-Explorer erscheinen.
+
+Klicke mit rechts auf das neue Projekt *Zahlen* und wähle *Als Startprojekt festlegen* (das ist die Option mit dem Rädchen). Nun kannst du das neue Projekt starten.
+
+Aufgabe
+--------
+
 Lege eine `double` Variable mit dem Namen `zahl1` an und eine `int` Variable mit dem Namen `zahl2`. Setze außerdem Werte, zum Beispiel `3.5` und `2`.
 
 <details>
