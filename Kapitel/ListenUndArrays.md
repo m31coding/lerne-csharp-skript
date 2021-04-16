@@ -47,9 +47,9 @@ Console.WriteLine(namen[1]); // Alice
 Console.WriteLine(namen[2]); // Bob
 ```
 
-Es ist zu beachten dass das erste Element nicht den Index `1`, sondern den Index `0` hat.
+Es ist zu beachten, dass das erste Element nicht den Index `1`, sondern den Index `0` hat.
 
-Mit dem gleichen Syntax auch ein Wert gesetzt werden:
+Mit dem gleichen Syntax kann auch ein Wert gesetzt werden:
 
 ```cs
 namen[1] = "Carol";
