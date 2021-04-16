@@ -7,7 +7,7 @@
 Zahlen rückwärts
 -----------------
 
-Schreibe eine Methode `static void ZähleRückwärts()` die die Zahlen von 10 bis 0 (in absteigender Reihenfolge) mittels einer Schleife auf der Konsole ausgibt
+Schreibe eine Methode `static void ZähleRückwärts()` die die Zahlen von 10 bis 0 (in absteigender Reihenfolge) mittels einer Schleife auf der Konsole ausgibt.
 
 <details><summary><b>Hinweis 1</b></summary>
 
