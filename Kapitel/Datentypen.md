@@ -50,7 +50,15 @@ Ein `string` stellt eine Zeichenkette dar und muss in doppelte Anführungszeiche
 string begrüßung = "Herzlich Willkommen zum Programmierkurs!";
 ```
 
-Auf einem string lassen sich zahlreiche nützliche Eigenschaften und Methoden aufrufen, zum Beispiel `Length`, `Contains`, und `ToLower`. Äußerst nützlich ist außerdem die Stringinterpolation `$`, welche es uns erlaubt Variablen wie folgt in einen string einzusetzen:
+Auf einem string lassen sich zahlreiche nützliche Eigenschaften und Methoden aufrufen, zum Beispiel `Length`, `Contains`, und `ToLower`:
+
+```cs
+Console.WriteLine(begrüßung.Length); // 40
+Console.WriteLine(begrüßung.Contains("Willkommen")); // true
+Console.WriteLine(begrüßung.ToLower()); // herzlich willkommen zum programmierkurs!
+```
+
+Äußerst nützlich ist außerdem die Stringinterpolation `$`, welche es uns erlaubt Variablen wie folgt in einen string einzusetzen:
 
 ```cs
 string name = "Kevin";
@@ -68,7 +76,7 @@ bool namenSindUngleich = name1 != name2; // true
 
 Eine Übersicht über alle Funktionalitäten findest du in der Dokumentation: https://docs.microsoft.com/en-us/dotnet/api/system.string.
 
->Um zur Dokumentation für einen bestimmten Typ zu bekommen suche ich meistens bei der Suchmaschine meiner Wahl nach dem Schlüsselwort in Verbindung mit 'msdn' (Microsoft Developer Network). Also zum Beispiel suche ich nach "string msdn". Die gewünschte Dokumentation ist dann meistens der erste Treffer.
+>Um die Dokumentation für einen bestimmten Typ zu erhalten suche ich meistens bei der Suchmaschine meiner Wahl nach dem Schlüsselwort in Verbindung mit 'msdn' (Microsoft Developer Network). Also zum Beispiel suche ich nach "string msdn". Die gewünschte Dokumentation ist dann meistens der erste Treffer.
 
 >Tipp: Um von der englischsprachigen zur deutschsprachigen Dokumentation zu wechseln, könnt ihr in der URL `en-us` durch `de-de` ersetzten. 
 
