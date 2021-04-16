@@ -3,10 +3,15 @@
 Zahlenlehrling
 ===============
 
+Projekt anlegen
+---------------
+
+Für diese Übung wollen wir ein neues Projekt anlegen. Mache im Projektmappen-Explorer auf der rechten Seite einen rechtsklick auf die Projektmappe *Programmierkurs*. Dann wählst du  *Hinzufügen* -> *Neues Projekt* aus. Wähle als Typ Konsolen-App (.NET Core) und klicke auf weiter. Gib dem Projekt den Namen *Zahlenlehrling* und klicke auf *Erstellen*. Nun sollte das Projekt im Projektmappen-Explorer erscheinen.
+
+Klicke mit rechts auf das neue Projekt *Zahlenlehrling* und wähle *Als Startprojekt festlegen* (das ist die Option mit dem Rädchen). Nun kannst du das neue Projekt starten.
+
 Aufgabe
 --------
-
-Lege für diese Übung ein neues Projekt *Zahlenlehrling* an und wähle es als Startprojekt. 
 
 Wir wollen ein Programm schreiben, in welchem der Computer uns dazu auffordert eine geheime Zahl zu erraten. Die geheime Zahl soll hierbei zufällig sein. Nachdem wir eine Zahl geraten und eingegeben haben hat sagt uns der Computer ob die geheime Zahl größer, kleiner, oder genau richtig ist. Behandle außerdem Eingaben die keine Zahl sind, und zähle die Versuche die der Benutzer braucht um die richtige Zahl zu erraten. Die Konsolenausgabe könnte wie folgt aussehen:
 
@@ -305,7 +310,7 @@ Das drücken einer Pfeil- oder der Entertaste kann auf der Konsole leider nicht 
 ```cs
 using System;
 
-namespace Zahlenlehrling
+namespace Zahlenzauberer
 {
     class Program
     {
