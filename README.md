@@ -51,8 +51,25 @@ Willkommen! Bevor wir loslegen können bitte ich dich die Programmierumgebung Vi
 ## Ressourcen
 
 - [Glossar](https://docs.google.com/spreadsheets/d/1w_FkXoN7iZ44eHloq2H4qOmTBGMPEinPypG_ez_MZ24/edit?usp=sharing)
-
 - [Visual Studio Tastenkombinationen](https://docs.google.com/spreadsheets/d/1C9p5r9nrLpd9N_28RipjmsC5OU0Jn42Eyw7QIL4YNaw/edit?usp=sharing)
 
+## Dokumentation
+
+- https://docs.microsoft.com/de-de/dotnet/
+
+## Weitere Tutorials und Hilfen
+
+- https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/
+- https://www.w3schools.com/cs/
+- https://www.tutorialsteacher.com/csharp/csharp-tutorials/
+- https://csharp.net-tutorials.com/ (auch deutschsprachig)
+- https://stackoverflow.com/
+
+## Typische Suchanfragen
+
+Wenn ihr einmal nicht weiterkommt kann euch bestimmt auch die Suchmaschine eurer Wahl weiterhelfen:
+
+- "C# write file stack overflow"
+- "string Klasse msdn" (findet die offizielle Dokuseite im Microsoft Developer Network)
 
 
