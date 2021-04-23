@@ -33,7 +33,7 @@ else
 }
 ```
 
-Die `TryParse`-Methode hat einen `bool` Rückgabewert und einen sogenannten `out` Parameter. In dessen Variable wird im Falles des Erfolges die konvertierte Zahl gespeichert und kann zur weitern Verarbeitung verwendet werden.
+Die `TryParse`-Methode hat einen `bool` Rückgabewert und einen sogenannten `out` Parameter. In dessen Variable wird im Falle des Erfolges die konvertierte Zahl gespeichert und kann zur weiteren Verarbeitung verwendet werden.
 
 Abfragen einzelner Tasten
 --------------------------
