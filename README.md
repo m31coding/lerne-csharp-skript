@@ -1,6 +1,6 @@
 # Lerne Programmieren mit C# und künstlicher Intelligenz
 
-![Vier gewinnt](Kapitel/Bilder/vier_gewinnt.png)
+<!-- ![Vier gewinnt](Kapitel/Bilder/vier_gewinnt.png) -->
 
 Das Skript zum Programmierkurs.
 
@@ -70,6 +70,6 @@ Willkommen! Bevor wir loslegen können bitte ich dich die Programmierumgebung Vi
 Wenn ihr einmal nicht weiterkommt kann euch bestimmt auch die Suchmaschine eurer Wahl weiterhelfen:
 
 - "C# write file stack overflow"
-- "string Klasse msdn" (findet die offizielle Dokuseite im Microsoft Developer Network)
+- "string klasse msdn" (findet die offizielle Dokuseite im Microsoft Developer Network)
 
 

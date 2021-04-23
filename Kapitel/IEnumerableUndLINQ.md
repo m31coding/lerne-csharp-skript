@@ -55,6 +55,7 @@ Einige Methoden nehmen eine Funktion als Argument entgegen, die sehr bequem durc
 ```cs
 zahlen.Any(z => z < 5) // true
 zahlen.All(z => z >= 0) // false
+zahlen.Count(z => z % 2 == 0); // 2
 ```
 
 Sehr häufig gebraucht wird die Methode `Where`, mit der man filtern kann, sowie die Methode `Select`, mit der man Elemente transformieren kann:
@@ -65,17 +66,27 @@ zahlen.Select(z => z * 2) // 4, 22, -8, 14
 zahlen.Where(z => z > 0).Select(z => z * 2) // 4, 22, 14
 ```
 
+Es gibt außerdem nützliche Methoden zur Sortierung von `IEnumerable`-Objekten:
+
+```cs
+zahlen.OrderBy() // -4, 2, 7, 11
+zahlen.OrderBy(z => z * z) // 2, -4, 7, 11
+zahlen.OrderByDescending(z => z) // 11, 7, 2, -4
+```
+
 Zuletzt möchte ich noch die `Aggregate` Methode nicht unerwähnt lassen. Sie formt aus einem aggregierten Wert und dem nächsten Element der Auflistung einen neuen aggregierten Wert.
 
 ```cs
 zahlen.Aggregate((z1, z2) => z1 * z2) // 2 * 11 * -4 * 7 = -616
 ```
 
-Um ein `IEnumerable` in eine Liste oder ein Array zu konvertieren, gibt es praktischerweise die Methoden `.ToList` und `.ToArray`.
+Bei allen `IEnumerable`-Methoden ist zu beachten, dass sie funktional definiert sind. Das heißt sie verändern das Objekt auf dem sie aufgerufen werden nicht sondern geben ein neues Objekt zurück. Typischerweise gibt man das Ergebnis deshalb direkt in eine andere Methode oder speichert es in einer Variable. Hierzu sind die Methoden `ToList` und `ToArray` hilfreich, die eine Konvertierung in den entsprechenden Typ vornehmen. Zum Beispiel:
 
-Es gibt noch einige weiter nützliche Methoden, wie zum Beispiel `OrderBy` und `OrderByDescending` welche man zum Sortieren verwenden kann.
+```cs
+List<int> zahlenSortiert = zahlen.OrderBy(z => z).ToList();
+```
 
-Eine Übersicht über alle Enumerable Methoden in LINQ findest du hier: https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable?view=net-5.0
+Eine Übersicht über alle Enumerable Methoden in LINQ findest du hier in der Dokumentation: https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable?view=net-5.0
 
 Verzögerte Ausführung
 ---------------------
@@ -108,7 +119,7 @@ Andererseits wird in diesem Beispiel der Filter dreimal von neuem angewandt, sod
 
 ---
 
->In diesem Kapitel hast du LINQ kennengelernt, eines der mächtigsten Features in C#. Es kann nicht nur für IEnumerables verwendet werden, man kann damit sogar auch Abfragen für Datenbanken und XML-Dokumente erstellen.
+>In diesem Kapitel hast du LINQ kennengelernt, eines der mächtigsten Features in C#. Es kann nicht nur für Objekte vom Typ `IEnumerable` verwendet werden wie zum Beispiel Listen und Arrays. Man kann damit sogar auch Abfragen für Datenbanken und XML-Dokumente erstellen.
 
 ---
 ### [Kursinhalt](../README.md)
