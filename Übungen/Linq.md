@@ -244,7 +244,7 @@ Console.WriteLine($"{Environment.NewLine}Der beste Spieler unter 18:");
 
 <details>
 <summary><b>Hinweis</b></summary>
-Verwende die Where- und die OrderByDescending-Methode.
+Verwende die Where-, die OrderByDescending-, und die First-Methode.
 <br>
 Alternativ: Verwende die Where- und die Aggregate-Methode.
 </details>
