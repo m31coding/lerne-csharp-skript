@@ -38,6 +38,7 @@ Willkommen! Bevor wir loslegen können bitte ich dich die Programmierumgebung Vi
 - [Listen und Arrays](Kapitel/ListenUndArrays.md)
 - [**Quiz**: Listen und Arrays](https://forms.gle/fA6qGSgwzzb97wBUA)
 - [IEnumerable Schnittstelle und LINQ](Kapitel/IEnumerableUndLINQ.md)
+- [**Übungen**: LINQ](Übungen/Linq.md)
 - [Enums](Kapitel/Enums.md)
 - [Klassen](Kapitel/Klassen.md)
 - [Schnittstellen](Kapitel/Schnittstellen.md)
