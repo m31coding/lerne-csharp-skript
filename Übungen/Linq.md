@@ -95,7 +95,7 @@ Console.WriteLine(spieler.All(s => s.Elo > 2500));
 </details>
 
 ```cs
-Console.WriteLine($"{Environment.NewLine}Gibt es Spieler mit einer Elo-Zahl > 2600 die 60 Jahre oder älter sind?");
+Console.WriteLine($"{Environment.NewLine}Gibt es Spieler mit einer Elo-Zahl > 2600, die 60 Jahre oder älter sind?");
 ```
 
 <details>
@@ -108,7 +108,7 @@ Verwende die Any-Methode.
 <br>
 
 ```cs
-Console.WriteLine(spieler.Any(s => s.Elo > 2600 && s.Alter > 60));
+Console.WriteLine(spieler.Any(s => s.Elo > 2600 && s.Alter >= 60));
 ```
 </details>
 
