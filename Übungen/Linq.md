@@ -19,7 +19,7 @@ Ich habe für euch Daten der besten 1000 Schachspieler vorbereitet. In der Datei
 
 Verwende die Liste `List<Schachspieler> spieler` um die unten stehenden Abfragen mit Hilfe von LINQ zu kreieren. 
 
-Ist das Ergebnis einer Abfrage eine Auflistung (`IEnumerable`), verwende die Methode `Konsolenausgabe<T>(IEnumerable<T> auflistung)` um das Ergebnis auf der Konsole darzustellen. Der Grund hierfür ist, dass es keine sinnvolle Überladung der Methode `Console.WriteLine` gibt, die ein `IEnumerable` entgegennimmt. Außerdem beschränkt die Funktion **Konsolenausgabe** die Ausgabe für eine bessere Übersicht auf vier Elemente der Auflistung. 
+Ist das Ergebnis einer Abfrage eine Auflistung (`IEnumerable`), verwende die Methode `Konsolenausgabe<T>(IEnumerable<T> auflistung)` um das Ergebnis auf der Konsole darzustellen. Der Grund hierfür ist, dass es keine sinnvolle Überladung der Methode `Console.WriteLine` gibt, die ein `IEnumerable` entgegennimmt. Außerdem beschränkt die Funktion `Konsolenausgabe` die Ausgabe für eine bessere Übersicht auf vier Elemente der Auflistung. 
 
 Für Abfragen die eine Zahl oder einen anderen primitiven Wert zurückgeben kannst du einfach wie gewohnt `Console.WriteLine` verwenden. Viel Spaß und Erfolg bei der Übung!
 
