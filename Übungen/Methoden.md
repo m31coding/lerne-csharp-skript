@@ -166,7 +166,7 @@ Wir möchten nun die Methode für verschiedene Spiele verwenden können die unte
 ```cs
 static double AnzahlSterne(int punktzahl, int minimalpunktzahl, int maximalpunktzahl)
 {
-    double relativePunktzahl = (punktzahl - minimalpunktzahl) / (maximalpunktzahl - minimalpunktzahl);
+    double relativePunktzahl = (punktzahl - minimalpunktzahl) / (double) (maximalpunktzahl - minimalpunktzahl);
     return relativePunktzahl * 5;
 }
 ```

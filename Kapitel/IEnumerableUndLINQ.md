@@ -69,7 +69,7 @@ zahlen.Where(z => z > 0).Select(z => z * 2) // 4, 22, 14
 Es gibt außerdem nützliche Methoden zur Sortierung von `IEnumerable`-Objekten:
 
 ```cs
-zahlen.OrderBy() // -4, 2, 7, 11
+zahlen.OrderBy(z => z) // -4, 2, 7, 11
 zahlen.OrderBy(z => z * z) // 2, -4, 7, 11
 zahlen.OrderByDescending(z => z) // 11, 7, 2, -4
 ```
