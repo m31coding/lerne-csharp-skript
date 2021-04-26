@@ -34,7 +34,6 @@ Console.WriteLine("Alphabetisch nach Namen sortiert:");
 
 <details>
 <summary><b>Hinweis</b></summary>
-<br>
 Verwende OrderBy.
 </details>
 
