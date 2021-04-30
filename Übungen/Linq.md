@@ -19,7 +19,7 @@ Ich habe für euch Daten der besten 1000 Schachspieler vorbereitet. In der Datei
 
 Verwende die Liste `List<Schachspieler> spieler` um die unten stehenden Abfragen mit Hilfe von LINQ zu kreieren. 
 
-Ist das Ergebnis einer Abfrage eine Auflistung (`IEnumerable`), verwende die Methode `Konsolenausgabe<T>(IEnumerable<T> auflistung)` um das Ergebnis auf der Konsole darzustellen. Der Grund hierfür ist, dass es keine sinnvolle Überladung der Methode `Console.WriteLine` gibt, die ein `IEnumerable` entgegennimmt. Außerdem beschränkt die Funktion `Konsolenausgabe` die Ausgabe für eine bessere Übersicht auf vier Elemente der Auflistung. 
+Ist das Ergebnis einer Abfrage eine Auflistung (`IEnumerable`), verwende die Methode `ConsoleHelper.WriteLine<T>(IEnumerable<T> auflistung)` um das Ergebnis auf der Konsole darzustellen. Der Grund hierfür ist, dass es keine sinnvolle Überladung der Methode `Console.WriteLine` gibt, die ein `IEnumerable` entgegennimmt. Außerdem beschränkt die Funktion `ConsoleHelper.WriteLine` die Ausgabe für eine bessere Übersicht auf vier Elemente der Auflistung. 
 
 Für Abfragen die eine Zahl oder einen anderen primitiven Wert zurückgeben kannst du einfach wie gewohnt `Console.WriteLine` verwenden. Viel Spaß und Erfolg bei der Übung!
 
@@ -42,7 +42,7 @@ Verwende OrderBy.
 <br>
 
 ```cs
-Konsolenausgabe(spieler.OrderBy(s => s.Name));
+ConsoleHelper.WriteLine(spieler.OrderBy(s => s.Name));
 ```
 </details>
 
@@ -62,7 +62,7 @@ Verwende OrderByDescending.
 <br>
 
 ```cs
-Konsolenausgabe(spieler.OrderByDescending(s => s.Elo));
+ConsoleHelper.WriteLine(spieler.OrderByDescending(s => s.Elo));
 
 ```
 </details>
@@ -203,7 +203,7 @@ Verwende die Where-Methode.
 <br>
 
 ```cs
-Konsolenausgabe(spieler.Where(s => s.Alter < 18 && s.Elo > 2500));
+ConsoleHelper.WriteLine(spieler.Where(s => s.Alter < 18 && s.Elo > 2500));
 ```
 </details>
 
@@ -223,7 +223,7 @@ Verwende die Select-Methode.
 <br>
 
 ```cs
-Konsolenausgabe(spieler.Select(s => s.Name));
+ConsoleHelper.WriteLine(spieler.Select(s => s.Name));
 ```
 </details>
 
@@ -243,7 +243,7 @@ Verwende die Where- und die Select-Methode.
 <br>
 
 ```cs
-Konsolenausgabe(spieler.Where(s => s.Elo > 2600).Select(s => s.Name));
+ConsoleHelper.WriteLine(spieler.Where(s => s.Elo > 2600).Select(s => s.Name));
 ```
 </details>
 
@@ -263,7 +263,7 @@ Verwende die OrderBy-, die Take-, und die Select-Methode.
 <br>
 
 ```cs
-Konsolenausgabe(spieler.OrderBy(s => s.Alter).Take(3).Select(s => s.Name));
+ConsoleHelper.WriteLine(spieler.OrderBy(s => s.Alter).Take(3).Select(s => s.Name));
 ```
 </details>
 
@@ -334,7 +334,7 @@ Verwende die Where-, die OrderByDescending-, die Skip-, und die Take-Methode.
 <br>
 
 ```cs
-Konsolenausgabe(spieler.Where(s => s.Alter < 18).OrderByDescending(s => s.Elo).Skip(1).Take(3));
+ConsoleHelper.WriteLine(spieler.Where(s => s.Alter < 18).OrderByDescending(s => s.Elo).Skip(1).Take(3));
 ```
 </details>
 
