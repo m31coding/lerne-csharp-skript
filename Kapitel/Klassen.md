@@ -189,7 +189,7 @@ public int Wertung {get; private set;}
 public int PunkteänderungProSpiel {get;}
 ```
 
-Wie du siehst können wir den `set`-Accessor einfach auf `private` setzten falls die Eigenschaft nicht öffentlich geschrieben werden soll. Falls sie überhaupt nicht veränderbar werden soll, lassen wir ihn einfach weg.
+Wie du siehst können wir den `set`-Accessor einfach auf `private` setzen falls die Eigenschaft nicht öffentlich geschrieben werden soll. Falls sie überhaupt nicht veränderbar werden soll, lassen wir ihn einfach weg.
 
 Unsere Klasse hat jetzt also die Form:
 
