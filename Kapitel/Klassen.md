@@ -88,6 +88,7 @@ Wir können nun `Schachspieler`-Objekte (auch **Instanzen** genannt) mithilfe de
 ```cs
 Schachspieler spieler1 = new Schachspieler("Alice", "Queen");
 Schachspieler spieler2 = new Schachspieler("Bob", "Bishop");
+// Spieler spielen gegeneinander ...
 spieler1.VerzeichneSieg();
 spieler2.VerzeichneNiederlage();
 // Berechne Platzierungen ...
