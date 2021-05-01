@@ -65,7 +65,7 @@ namen.RemoveAt(2); // Entfernt Carol.
 Alternativ kann auch die `Remove` Methode verwendet werden und das Element angegeben werden:
 
 ```cs
-namen.Remove("Bob"); 
+namen.Remove("Alice"); 
 ```
 
 Und um schließlich die gesamte Liste zu leeren schreiben wir:
