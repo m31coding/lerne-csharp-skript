@@ -22,15 +22,15 @@ Der Typ `List<T>` ist eine Klasse und um ein Listenobjekt zu erzeugen brauchen w
 Wir können nun Elemente mittels der `Add` Methode hinzufügen;
 
 ```cs
-namen.Add("Kevin");
 namen.Add("Alice");
 namen.Add("Bob");
+namen.Add("Carol");
 ```
 
 Alternativ können wir auch direkt bei der Konstruktion der Liste Elemente setzen:
 
 ```cs
-List<string> namen = new List<string>() { "Kevin", "Alice", "Bob" };
+List<string> namen = new List<string>() { "Alice", "Bob", "Carol" };
 ```
 
 Die `Count` Eigenschaft gibt uns Auskunft über die Anzahl Elemente in der Liste:
@@ -42,9 +42,9 @@ int anzahlNamen = namen.Count; // 3
 Wir können durch einen `int` Index auf die einzelnen Elemente in der Liste zugreifen:
 
 ```cs
-Console.WriteLine(namen[0]); // Kevin 
-Console.WriteLine(namen[1]); // Alice
-Console.WriteLine(namen[2]); // Bob
+Console.WriteLine(namen[0]); // Alice 
+Console.WriteLine(namen[1]); // Bob
+Console.WriteLine(namen[2]); // Carol
 ```
 
 Es ist zu beachten, dass das erste Element nicht den Index `1`, sondern den Index `0` hat.
@@ -52,20 +52,20 @@ Es ist zu beachten, dass das erste Element nicht den Index `1`, sondern den Inde
 Mit dem gleichen Syntax kann auch ein Wert gesetzt werden:
 
 ```cs
-namen[1] = "Carol";
-Console.WriteLine(namen[1]); // Carol
+namen[1] = "Eve";
+Console.WriteLine(namen[1]); // Eve
 ```
 
 Um ein Element an einer bestimmten Position zu entfernen verwenden wir die `RemoveAt` Methode: 
 
 ```cs
-namen.RemoveAt(2); // Entfernt Bob.
+namen.RemoveAt(2); // Entfernt Carol.
 ```
 
 Alternativ kann auch die `Remove` Methode verwendet werden und das Element angegeben werden:
 
 ```cs
-namen.Remove("Kevin"); 
+namen.Remove("Bob"); 
 ```
 
 Und um schließlich die gesamte Liste zu leeren schreiben wir:
@@ -95,15 +95,15 @@ string[] namen = new string[3];
 Analog zu Listen können wir Elemente mit einem Index setzen:
 
 ```cs
-namen[0] = "Kevin";
-namen[1] = "Alice";
-namen[2] = "Bob";
+namen[0] = "Alice";
+namen[1] = "Bob";
+namen[2] = "Carol";
 ```
 
 Die Deklaration und Initialisierung kann wiederum auch in einer Zeile erfolgen:
 
 ```cs
-string[] namen = new string[] { "Kevin", "Alice", "Bob" };
+string[] namen = new string[] { "Alice", "Bob", "Carol" };
 ```
 
 Anstelle der `Count` Eigenschaft gibt es bei Arrays die `Length` Eigenschaft:
