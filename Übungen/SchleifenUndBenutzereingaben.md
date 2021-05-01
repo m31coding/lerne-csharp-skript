@@ -128,21 +128,19 @@ Console.WriteLine(BerechneFakultät(4)); // 24
 
 <details><summary><b>Lösung 1</b></summary>
 
-Die Lösung für eine Abwärtsiteration (`i--`) lautet:
+Die Lösung für eine Aufwärtsiteration (`i++`) ist:
 
 ```cs
 static int BerechneFakultät(int n)
 {
-    if (n == 0) return 1;
+    int ergebnis = 1;
 
-    int result = n;
-
-    for (int i = n - 1; i>= 1; i--)
+    for(int i = 2; i<=n; i++)
     {
-        result = result * i;
+        ergebnis = ergebnis * i;
     }
 
-    return result;
+    return ergebnis;
 }
 ```
 
@@ -150,19 +148,19 @@ static int BerechneFakultät(int n)
 
 <details><summary><b>Lösung 2</b></summary>
 
-Die Lösung für eine Aufwärtsiteration (`i++`) ist:
+Die Lösung für eine Abwärtsiteration (`i--`) lautet:
 
 ```cs
 static int BerechneFakultät(int n)
 {
-    int result = 1;
+    int ergebnis = 1;
 
-    for(int i = 2; i<=n; i++)
+    for (int i = n; i > 1; i--)
     {
-        result = result * i;
+        ergebnis = ergebnis * i;
     }
 
-    return result;
+    return ergebnis;
 }
 ```
 
