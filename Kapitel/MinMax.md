@@ -3,6 +3,9 @@
 MinMax-Algorithmus
 ===================
 
+![MinMax-Algorithmus TicTacToe](Bilder/MinMaxTicTacToe.svg)
+![MinMax-Algorithmus TicTacToe2](Bilder/MinMaxTicTacToe2.svg)
+
 In diesem Kapitel möchte ich dir den MinMax-Algorithmus erklären, der hervorragend dazu geeignet ist KIs für Spiele wie TicTacToe, Vier gewinnt, oder auch Schach zu programmieren. 
 
 Zunächst einmal benötigen wir das Konzept des Spielbaums. Im Folgenden Schaubild ist ein fiktives Spiel abstrakt dargestellt. Ausgehend von der Spielstellung **A** gibt es für den Spieler am Zug drei mögliche Spielzüge: **a1**, **a2** und **a3**. Diese führen zu den Spielstellungen **B**, **C** und **D**. Nun ist der andere Spieler am Zug. Dieser hat wiederum für jede Spielstellung drei mögliche Züge. Auf diese weise entsteht eine baumartige Struktur.
