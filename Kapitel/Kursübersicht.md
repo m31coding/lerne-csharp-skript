@@ -5,7 +5,7 @@ Kursübersicht
 
 Meine Motivation für diesen Kurs ist dich vom Programmieren zu begeistern. Hierzu möchte ich dich in die moderne Programmiersprache C# einführen und dir außerdem die Grundlagen einer klassischen KI vermitteln.
 
-Wir werden grob die folgenden Themen behandeln:
+Wir werden die folgenden Themen behandeln:
 
 Künstliche Intelligenz
 -----------------------
