@@ -252,7 +252,7 @@ watch.Start();
 
 Anschließend könnt ihr jeder Zeit die vergangene Zeit abrufen:
 ```cs
-long vergangeneMillisekunden = watch.ElapsedMilliseconds;
+double vergangeneSekunden = watch.Elapsed.TotalSeconds;
 ```
 
 Überlege dir wie du aus den Größen Anzahl Versuche und vergangene Zeit eine Wertung berechnen kannst. Hier gibt es kein richtig oder falsch, versuche dich einfach daran :).
