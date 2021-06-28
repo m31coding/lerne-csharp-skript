@@ -226,6 +226,8 @@ Spielstand spielstand = partie.SpielePartie();
 VerkündeErgebnis(spielstand);
 ```
 
+Eine **Schnittstelle** ist also ein Vertrag der festhält **was** gemacht werden kann. Jede **Klasse** die die Schnittstelle implementiert definiert **wie** es gemacht wird. 
+
 >In diesem Kapitel haben wir das Konzept der Schnittstellen besprochen. Klassen und Schnittstellen bilden zusammen die wichtigsten Komponenten der modernen objektorientierten Programmierung. Hast du diese Konzepte verinnerlicht so bleibt mir nichts weiter als dir zu gratulieren! Du hast dann nämlich einen großen und entscheidenden Schritt gemacht. Welche Klassen und Schnittstellen man für das jeweilige Problem am besten definieren sollte ist eine Wissenschaft für sich. Zahlreiche Bücher widmen sich dem Thema der Modellierung (**Domain-driven Design**) und des Schreibens von sauberem Code (**Clean Code**). Ich halte es für eine sehr gute Idee dass du dich bald mit diesen Konzepten vertraut machst, allerdings würde dies den Rahmen dieses Kurses sprengen. 
 
 ---
